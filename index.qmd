@@ -1,29 +1,25 @@
 ---
 title: "The Zarnack Group"
-image: ./images/mirko_small.jpeg
+image: ./images/logo_main_cell.jpeg
 about: 
   template: jolla
   image-shape: rounded
-  image-width: 15em
+  image-width: 40em
   links:
-      - text: LinkedIn
-        href: https://www.linkedin.com/in/dr-mirko-br%C3%BCggemann-bioinformatic/
-      - text: GitHub
-        href: https://github.com/mirkobr
-      - text: Mail
-        href: mirko.brueggemann@mail.de
+      - icon: github
+        text: Github
+        href: https://github.com/ZarnackGroup
+      - icon: house
+        text: Institute
+        href: https://www.bmls.de/Computational_RNA_Biology/aboutus.html
+
 ---
 
-# **About us**
+# **Computational RNA Biology**
 
-## We are a group that is a group :)
+RNA-binding proteins (RBPs) are critical players in the posttranscriptional control of gene expression. Their functional impact ranges from the alternative splicing and polyadenylation of pre-mRNAs in the nucleus to the subcellular localisation and translation of mRNAs in the cytoplasm. Numerous diseases are characterised by dysregulated RBPs and massively altered transcriptome patterns, particularly prominent in neurodegeneration and cancer. In the era of functional genomics and high-throughput sequencing, we are now able to address these processes at an unprecedented resolution and scale.
 
-# **Experience**
+### Funding
 
-WE dont have that ....
-
-------------------------------------------------------------------------
-
-# **Education**
-
-Not educated and happy
+![](./images/logos/gu.png){width="70"}
+![](./images/logos/sfb902.png){width="70"}

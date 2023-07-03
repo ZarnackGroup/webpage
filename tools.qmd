@@ -19,14 +19,12 @@ We provide xxx
 ::: {#clip-processing}
 :::
 
-
 ## R/Bioconductor software packages
 
 We contribute to the *Bioconductor* project with the following tools ...
 
-::: {#bioconductor} 
+::: {#bioconductor}
 :::
-
 
 ## circRNAs
 

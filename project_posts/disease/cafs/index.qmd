@@ -1,19 +1,13 @@
 ---
 title: "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development"
 description: "Cancer-associated fibroblasts populations change over time during mammary carcinoma tumor development"
-author: "Mirko Brüggemann"
-date: "2019-09-09"
+author: "SFB-902"
 image: cafs_icon.png
 draft: false
 categories:
   - Cancer
-  - Cancer-associated fibroblasts
-  - Survival analysis
-  - Machine learning
-  - Gene signature
   - RNA-Seq
-  - Differential expression
-  - TCGA
+
 ---
 
 ## The role of cancer-associated fibroblasts in mammary carcinoma development

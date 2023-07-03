@@ -21,27 +21,5 @@
       "/project_posts/disease/pge2signaling/index.html",
       "/project_posts/disease/PURA/index.html"
     ]
-  },
-  {
-    "listing": "/project_posts/dna_stability.html",
-    "items": [
-      "/project_posts/dna_stability/DSB/index.html"
-    ]
-  },
-  {
-    "listing": "/project_posts/disease_index.html",
-    "items": [
-      "/project_posts/disease/PURA/index.html",
-      "/project_posts/disease/pge2signaling/index.html",
-      "/project_posts/disease/cafs/index.html"
-    ]
-  },
-  {
-    "listing": "/project_posts/dna_stability Kopie.html",
-    "items": [
-      "/project_posts/rna_regulation/srsf6hypoxia/index.html",
-      "/project_posts/rna_regulation/srsf6diabetes/index.html",
-      "/project_posts/rna_regulation/mkrn/index.html"
-    ]
   }
 ]

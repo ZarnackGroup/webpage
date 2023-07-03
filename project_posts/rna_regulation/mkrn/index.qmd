@@ -7,11 +7,7 @@ image: mkrn_icon.png
 draft: false
 categories:
   - Ribosomal profiling
-  - Ubiquitylation
   - iCLIP
-  - Binding motif
-  - Binding sites
-  - translational regulation
 ---
 
 ## The role of MKRN1 in maintaining proteome integrity

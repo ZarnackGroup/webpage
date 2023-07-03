@@ -2,8 +2,8 @@
 pagetitle: "Teaching"
 ---
 
-# We teach what we know 
+# We teach what we know
 
 ## and also what we don't know
 
-Haha 
+Haha

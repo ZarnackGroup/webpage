@@ -6,15 +6,9 @@ date: "2020-12-29"
 image: srsf6_icon.png
 draft: false
 categories:
-  - SRSF6
   - Diabetes
-  - Alternative splicing
-  - Differential expression
-  - Binding motif
-  - Binding sites
   - RNA-Seq
   - iCLIP
-  - RBP
 ---
 
 ## The RNA-binding protein SRSF6 in human pancreatic β-cells

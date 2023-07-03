@@ -24,9 +24,11 @@ format:
   html:
     theme:
         light: flatly
-        dark: slate
+        dark: darkly
+    fontsize: 1.1em
+    linestretch: 1.7
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 

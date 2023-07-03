@@ -12,19 +12,18 @@ listing:
     type: grid
 ---
 
-## Disease
+## Learning the Molecular Code of RNA Regulation
 
-Here we explore cancer biology, the PURA syndrom, ...
-
-:::{#disease}
-:::
-
-
-## RNA regulation
-
-RNA runs the world, we regulate the world through RNA
+RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.
 
 :::{#rna-regulation}
+:::
+
+## Regulatory Mechanisms in Human (Patho)Physiology
+
+RNA metabolism is often disturbed in human disease, including neurodegeneration and cancer. In collaboration with molecular biologists and pre-clinical researchers, we examine transcriptome changes under different pathophysiological conditions.
+
+:::{#disease}
 :::
 
 
@@ -35,6 +34,3 @@ If you are not stable you are not a DNA
 :::{#dna-stability}
 :::
 
-## Funding
-
-[!image]()

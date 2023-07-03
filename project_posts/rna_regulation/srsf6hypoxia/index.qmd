@@ -6,14 +6,9 @@ date: "2023-01-09"
 image: hypoxia_icon.png
 draft: false
 categories:
-  - SRSF6
   - Hypoxia
-  - Alternative splicing
-  - Binding motif
-  - Binding sites
   - RNA-Seq
   - iCLIP
-  - RBP
 ---
 
 ## The effect of SRSF6 poison cassette exon splicing in hypoxia
