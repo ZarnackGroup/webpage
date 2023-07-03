@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "The Zarnack Group"
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: tools.qmd
+        text: Tools
+      - href: teaching.qmd
+        text: Teaching
+      - href: people.qmd
+        text: People
+      - href: publications.qmd
+        text: Publications
+
+format:
+  html:
+    theme:
+        light: flatly
+        dark: slate
+    css: styles.css
+    toc: true
+
+editor: visual
+

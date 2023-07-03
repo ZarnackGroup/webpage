@@ -1,0 +1,24 @@
+---
+title: "Differential binding"
+description: "A BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation"
+author: "Mirko Brüggemann"
+date: "2023-03-01"
+image: diff_icon.png
+draft: false
+categories:
+  - package development
+  - software
+  - Bioconductor
+  - R
+  - iCLIP
+  - Binding sites
+  - RBP
+---
+
+## The Differential binding package extension
+
+![](./diff.png){width="806"}
+
+Understanding condition specific affinity changes of a RNA-binding protein (RBP) to a known binding site is the next level of understanding (post-) transcriptional regulartory processes in more detail.
+
+The `DifferentialBinding` module will extend the `BindingSiteFinder` by various new features and functionalities, suited to identify RBP specific binding site changes in a transcriptome wide fashion. The extention is soon to be released and can be found on the `BindingSiteFinder` [Bioconductor page](https://bioconductor.org/packages/release/bioc/html/BindingSiteFinder.html).

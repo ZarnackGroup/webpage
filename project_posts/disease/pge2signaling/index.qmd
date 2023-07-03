@@ -1,0 +1,24 @@
+---
+title: "Prostaglandin E2 Signaling in Cancer-Associated Fibroblasts"
+description: "Disruption of Prostaglandin E2 Signaling in Cancer-Associated Fibroblasts Limits Mammary Carcinoma Growth but Promotes Metastasis "
+author: "Mirko Brüggemann"
+date: "2022-04-01"
+image: pge2_icon.png
+draft: false
+categories:
+  - Cancer
+  - Cancer-associated fibroblasts
+  - Prostaglandin
+  - Survival analysis
+  - RNA-Seq
+  - Differential expression
+  - TCGA
+---
+
+## The effect of Prostaglandin E2 Signaling disruption in Cancer-Associated Fibroblasts
+
+![](./pge2.png)
+
+The activation and differentiation of cancer-associated fibroblasts (CAF) are involved in tumor progression. Here, we showed that the tumor-promoting lipid mediator prostaglandin E2 (PGE2) plays a paradoxical role in CAF activation and tumor progression. The inflammatory lipid prostaglandin E2 suppresses cancer-associated fibroblast expansion and activation limited primary mammary tumor growth while promoting metastasis. These data characterized in this project suggests a new pathway of regulating inflammatory CAF activation, which affects breast cancer progression.
+
+The full manuscript can be found at [Cancer Research](https://aacrjournals.org/cancerres/article-abstract/82/7/1380/694037/Disruption-of-Prostaglandin-E2-Signaling-in-Cancer).

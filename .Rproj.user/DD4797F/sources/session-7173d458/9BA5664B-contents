@@ -1,0 +1,24 @@
+---
+title: "A bioinformatics pipeline for iCLIP data analysis"
+description: "iCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites"
+author: "Mirko Brüggemann"
+date: "2020-06-01"
+image: methods_icon.png
+draft: false
+categories:
+  - package development
+  - software
+  - Bioconductor
+  - Binding sites
+  - R
+  - iCLIP
+  - RBP
+---
+
+## A complete pipeline from sequencing reads to RBP binding sites
+
+![](./methods.png){width="666"}
+
+Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional gene regulation. This information can be obtained from individual-nucleotide resolution UV crosslinking and immunoprecipitation (iCLIP) experiments. In this project we discribed the complete bioinformatic data analysis workflow to reliably detect RBP binding sites from iCLIP data. The workflow covers all steps from the initial quality control of the sequencing reads up to peak calling and quantification of RBP binding. For each tool, we explain the specific requirements for iCLIP data analysis and suggest optimized parameter settings.
+
+The full manuscript can be found at [Methods](https://www.sciencedirect.com/science/article/pii/S1046202318304948) and an updated version of the binding site definition part is published as the R/ Bioconductor packge `BindingSiteFinder` [Bioconductor page](https://bioconductor.org/packages/release/bioc/html/BindingSiteFinder.html).

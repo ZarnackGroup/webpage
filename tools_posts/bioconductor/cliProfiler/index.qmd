@@ -1,0 +1,22 @@
+---
+title: "cliProfiler"
+description: "An easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide valuable information for understanding the IP experiment results."
+author: "You Zhou"
+date: "2021-09-21"
+image: icon_cliProfiler.png
+draft: false
+categories:
+  - Bioconductor
+  - R
+  - CLIP
+  - Visualization
+---
+
+## The cliProfiler package extension
+
+![](./icon_cliProfiler.png){width = "600", height = "600}
+
+Cross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop `cliProfiler` package. The `cliProfiler` includes seven functions which allow users easily make different profile plots.
+
+The cliProfiler package is available at https://bioconductor.org and can be access with the 
+following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html.

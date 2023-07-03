@@ -1,0 +1,10 @@
+---
+pagetitle: "Disease"
+toc: false
+listing:
+  contents: "disease/**/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+---
+

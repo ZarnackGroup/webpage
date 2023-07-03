@@ -1,0 +1,23 @@
+---
+title: "Ribosome-associated quality control by MKRN1"
+description: "The RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation"
+author: "Mirko Brüggemann"
+date: "2019-10-22"
+image: mkrn_icon.png
+draft: false
+categories:
+  - Ribosomal profiling
+  - Ubiquitylation
+  - iCLIP
+  - Binding motif
+  - Binding sites
+  - translational regulation
+---
+
+## The role of MKRN1 in maintaining proteome integrity
+
+![](./mkrn.png)
+
+Translating ribosomes that encounter poly(A) sequences are terminally stalled, as quality control mechanism, followed by ribosome recycling and decay of the truncated nascent polypeptide via ribosome-associated quality control. In this project we demonstrated that the conserved RNA-binding E3 ubiquitin ligase Makorin Ring Finger Protein 1 (MKRN1) promotes ribosome stalling at poly(A) sequences during ribosome-associated quality control. We observed a direct interaction with the cytoplasmic poly(A)-binding protein (PABPC1) as well as precice position upstream of poly(A) tails in the mRNA.Thus we propose that MKRN1 mediates the recognition of poly(A) tails to prevent the production of erroneous proteins from prematurely polyadenylated transcripts, thereby maintaining proteome integrity.
+
+The full manuscript can be found at [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1814-0).

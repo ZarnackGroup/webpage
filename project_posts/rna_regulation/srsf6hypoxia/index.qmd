@@ -1,0 +1,25 @@
+---
+title: "SRSF6 poison cassette exon splicing as hypoxia response"
+description: "Poison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia"
+author: "Mirko Brüggemann"
+date: "2023-01-09"
+image: hypoxia_icon.png
+draft: false
+categories:
+  - SRSF6
+  - Hypoxia
+  - Alternative splicing
+  - Binding motif
+  - Binding sites
+  - RNA-Seq
+  - iCLIP
+  - RBP
+---
+
+## The effect of SRSF6 poison cassette exon splicing in hypoxia
+
+![](./hypoxia.png){width="669"}
+
+Hypoxia induces massive changes in alternative splicing (AS) to adapt cells to the lack of oxygen. In this project SRSF6 was found to be a key factor in the AS response to hypoxia. A strong reduction in SRSF6 levels in acute hypoxia led to exon skipping and triggered nuclear speckle dispersal as a mechanism for the cell to reprogram the gene expression profile. We found this mechanism to be active in various cancer types and further propose a tumor suppressor function.
+
+The full manuscript can be found at [Nucleic Acids Research](https://academic.oup.com/nar/article/51/2/870/6976068).

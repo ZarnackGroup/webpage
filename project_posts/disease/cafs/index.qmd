@@ -1,0 +1,25 @@
+---
+title: "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development"
+description: "Cancer-associated fibroblasts populations change over time during mammary carcinoma tumor development"
+author: "Mirko Brüggemann"
+date: "2019-09-09"
+image: cafs_icon.png
+draft: false
+categories:
+  - Cancer
+  - Cancer-associated fibroblasts
+  - Survival analysis
+  - Machine learning
+  - Gene signature
+  - RNA-Seq
+  - Differential expression
+  - TCGA
+---
+
+## The role of cancer-associated fibroblasts in mammary carcinoma development
+
+![](./cafs.png){width="683"}
+
+Cancer-associated fibroblasts (CAFs) in the tumor microenvironment contribute to all stages of tumorigenesis and are usually considered to be tumor-promoting cells. In this project we found a remarkable degree of CAF herterogenity which changed during mammary cancer development. We created whole transcriptome longitudinal data on CAF development from early- and late-stage tumors and observed a shift in fibroblast populations over time, which was negatively associated with patient survival. We then trained a random forest classification model to compute a gene signature that had predicive power in bulk tumor patient samples.
+
+The full manuscript can be found at [International Journal of Molecular Sciences](https://www.mdpi.com/1422-0067/20/18/4438).

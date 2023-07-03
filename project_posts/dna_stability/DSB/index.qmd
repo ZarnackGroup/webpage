@@ -1,0 +1,18 @@
+---
+title: "Sources and consequences of intrinsic genomic instability across human cell types"
+description: "Fill this."
+author: "Dominik Stroh"
+date: "2023-06-30"
+image: mkrn_icon.png
+draft: false
+categories:
+  - Genome instability
+  - Double-strand breaks
+  - sBLISS
+---
+
+## The sources and consequences of DNA fragility across human cell types and diseases.
+
+![](./mkrn.png)
+
+Our research focuses on understanding the mechanisms behind genome rearrangements caused by DNA double-strand breaks (DSBs). These rearrangements can have both positive and negative effects, contributing to genetic diversity and disease development, particularly cancer. While we have knowledge about externally induced DNA fragile sites, the factors influencing spontaneous DSBs in different genomic regions and the underlying mechanisms remain unknown. In collaboration with our partners, we employ advanced genomics techniques to analyze DNA breaks at the nucleotide level and investigate chromatin interactions using chromosome conformation capture methods. Recent studies have demonstrated that transcription and the three-dimensional folding of the genome influence the occurrence of oncogenic rearrangements induced by chemotherapy. Additionally, our collaborators have identified a class of endogenous DNA fragile hotspots that differ from those induced by drugs. During the next phase of our project, we aim to uncover the sources of intrinsic DNA fragility and explore how they contribute to recurrent rearrangements and tissue-specific oncogenesis. By integrating the genomics data generated in the Roukos lab with computational analysis and machine learning, we will develop a comprehensive collection of intrinsic DNA fragility maps across various human cell types. Our research will investigate the relationship between DNA fragility and gene expression, chromatin organization, and three-dimensional chromosome structure. We will focus on the roles of non-canonical DNA structures, such as R-loops and G-quadruplexes, as well as incomplete topoisomerase actions, and their potential interference with replication and transcription. Utilizing machine learning models, we will construct predictive models for identifying intrinsic DNA fragility in the human genome and identify the most influential features and their interdependencies. Moreover, by integrating our findings with publicly available structural variants identified in cancer patient samples, we aim to identify tissue-specific genomic instability hotspots. Our project seeks to unravel why certain regions of the genome are more prone to breakage, providing valuable insights into the emergence of recurrent genome rearrangements and their association with oncogenesis.

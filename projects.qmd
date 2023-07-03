@@ -1,0 +1,40 @@
+---
+title: Projects
+listing: 
+  - id: dna-stability
+    contents: "project_posts/dna_stability/**/index.qmd"
+    type: grid
+  - id: rna-regulation
+    contents: "project_posts/rna_regulation/**/index.qmd"
+    type: grid
+  - id: disease
+    contents: "project_posts/disease/**/index.qmd"
+    type: grid
+---
+
+## Disease
+
+Here we explore cancer biology, the PURA syndrom, ...
+
+:::{#disease}
+:::
+
+
+## RNA regulation
+
+RNA runs the world, we regulate the world through RNA
+
+:::{#rna-regulation}
+:::
+
+
+## DNA stability
+
+If you are not stable you are not a DNA
+
+:::{#dna-stability}
+:::
+
+## Funding
+
+[!image]()

@@ -1,0 +1,9 @@
+---
+pagetitle: "RNA regulation"
+toc: false
+listing:
+  contents: "rna_regulation/**/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+---

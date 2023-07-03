@@ -1,0 +1,34 @@
+---
+title: "Publications"
+---
+
+### 2023
+
+de Oliveira Freitas Machado, C., Schafranek, M., **Brüggemann, M**., Hernández Cañás, M. C., Keller, M., Di Liddo, A., \... & Müller-McNicoll, M. (2023). Poison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia. *Nucleic Acids Research*.
+
+### 2022
+
+Elwakeel, E., **Brüggemann, M.**, Wagih, J., Lityagina, O., Elewa, M. A., Han, Y., \... & Weigert, A. (2022). Disruption of prostaglandin E2 signaling in cancer-associated fibroblasts limits mammary carcinoma growth but promotes metastasis. *Cancer Research*, *82*(7), 1380-1395.
+
+### 2021
+
+**Brüggemann, M.** (2021). *Computational studies on RNA processing in higher eukaryotes* (Doctoral dissertation, Johann Wolfgang Goethe-Universität Frankfurt am Main).
+
+### 2020
+
+Busch, A., **Brüggemann, M.**, Ebersberger, S., & Zarnack, K. (2020). iCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites. *Methods*, *178*, 49-62.
+
+Alvelos, M. I., **Brüggemann, M**., Sutandy, F. R., Juan-Mateu, J., Colli, M. L., Busch, A., \... & Eizirik, D. L. (2021). The RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells. *Life Science Alliance*, *4*(3).
+
+Dold, A., Han, H., Liu, N., Hildebrandt, A., **Brüggemann, M.**, Rücklé, C., \... & Lasko, P. (2020). Makorin 1 controls embryonic patterning by alleviating Bruno1-mediated repression of oskar translation. *PLoS genetics*, *16*(1), e1008581.
+
+#### 2019
+
+Elwakeel, E., **Brüggemann, M.**, Fink, A. F., Schulz, M. H., Schmid, T., Savai, R., \... & Weigert, A. (2019). Phenotypic plasticity of fibroblasts during mammary carcinoma development. *International Journal of Molecular Sciences*, *20*(18), 4438.
+
+Hildebrandt, A., **Brüggemann, M.**, Rücklé, C., Boerner, S., Heidelberger, J. B., Busch, A., \... & Beli, P. (2019). The RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly (A) translation. *Genome biology*, *20*, 1-20.
+
+---
+nocite: |
+  @*
+---

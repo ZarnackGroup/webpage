@@ -1,0 +1,13 @@
+---
+pagetitle: "DNA stability"
+toc: false
+listing:
+  contents: "dna_stability/**/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+# DNA stability
+
+We are DNA, we are stable

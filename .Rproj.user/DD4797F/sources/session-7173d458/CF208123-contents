@@ -1,0 +1,23 @@
+---
+title: "BindingSiteFinder"
+description: "An R/ Bioconductor software package for RBP binding site definition"
+author: "Mirko Brüggemann"
+date: "2021-10-01"
+image: bsf_icon.png
+draft: false
+categories:
+  - package development
+  - software
+  - Bioconductor
+  - R
+  - iCLIP
+  - RBP
+---
+
+## The BindingSiteFinder package
+
+![](./bsf_summary.png){width="828"}
+
+Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional regulatory processes.
+
+The `BindingSiteFinder` software package provides a full workflow for RBP binding site definition. The package provides function as well as rich visualizations and is well integrated in state-of-the-art and widely used Bioconductor classes, such as `GenomicRanges` and `SummarizedExperiments`. For details please see the [vignette](https://bioconductor.org/packages/release/bioc/html/BindingSiteFinder.html).

@@ -1,0 +1,21 @@
+---
+title: "racoon - complete CLIP processing from one single command"
+description: "racoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution"
+author: "Melina Klostermann"
+image: Logo_PURA_pbody.png
+draft: false
+categories:
+  - PURA
+  - PURA Syndrome
+  - Neurodevelopement
+  - Differential expression
+  - Binding motif
+  - Binding sites
+  - RNA-Seq
+  - iCLIP
+  - RBP
+---
+
+## Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome.
+
+![](./GraphicalAbstract.png)
