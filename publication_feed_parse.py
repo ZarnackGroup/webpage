@@ -10,8 +10,13 @@ with open("publications.qmd", "w") as quarto_out:
         title = entry["title"]
         publish_time = entry["published"].split(" ")
         time_string = publish_time[1] + " " + publish_time[2] + " " + publish_time[3]
-        paper_string = entry["dc_source"] + ", " + entry["dc_identifier"] + ", " + time_string
+        paper_string = "*" + entry["dc_source"] + "*" +", " + entry["dc_identifier"] + ", " + time_string
         for i in entry["authors"]:
+          if i["name"] == "Kathi Zarnack":
+            author_list.append("**Kathi Zarnack**")
+          elif i["name"] == "Katharina Zarnack":
+            author_list.append("**Katharina Zarnack**")
+          else
             author_list.append(i["name"])
 
         author_string = ", ".join(author_list)
