@@ -15,7 +15,7 @@ with open("publications.qmd", "w") as quarto_out:
             author_list.append(i["name"])
 
         author_string = ", ".join(author_list)
-        out_string = "\n" + author_string + "\n# " + title + "\n" + paper_string + "\n"
+        out_string = "\n" + author_string + "\n; " + title + "\n " + paper_string + "\n"
         quarto_out.write(out_string)
 
 
