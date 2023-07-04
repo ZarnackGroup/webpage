@@ -1,21 +1,15 @@
 ---
 title: "racoon - complete CLIP processing from one single command"
-description: "racoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution"
+description: "racoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution."
 author: "Melina Klostermann"
-image: Logo_PURA_pbody.png
+image: Racoon_logo.png
 draft: false
 categories:
-  - PURA
-  - PURA Syndrome
-  - Neurodevelopement
-  - Differential expression
-  - Binding motif
-  - Binding sites
-  - RNA-Seq
-  - iCLIP
-  - RBP
+  - CLIP
+  - RNA binding proteins
+  - commandline
 ---
 
-## Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome.
+![](./FigureA-C.png) racoon is a commandline tool, that automates the CLIP processing pipeline from [Busch et al. (2020)](https://www.sciencedirect.com/science/article/pii/S1046202318304948). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.
 
-![](./GraphicalAbstract.png)
+A link with the documentation follows shortly.
