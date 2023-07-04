@@ -19,6 +19,8 @@ website:
         text: People
       - href: publications.qmd
         text: Publications
+      - href: contact.qmd
+        text: Contact
 
 format:
   html:
