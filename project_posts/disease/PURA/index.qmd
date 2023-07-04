@@ -40,7 +40,8 @@ primary objective is to shed light on the cellular function of PURA in
 healthy cells, an endeavor we have already begun to explore in our
 publication titled "Depletion of the RNA-binding protein PURA triggers
 changes in posttranscriptional gene regulation and loss of P-bodies"
-(Molitor & Klostermann et al., Nucleic Acids Research).
+([Molitor & Klostermann et al., Nucleic Acids
+Research](https://pubmed.ncbi.nlm.nih.gov/36651277/)).
 
 In our publication, we unveil the predominant cytoplasmic localization
 of PURA, where it interacts with thousands of mRNAs. Remarkably, the
