@@ -1,7 +1,173 @@
 ---
-pagetitle: "People"
+title: People
+
 ---
 
-# We are the good people
+```{r include=FALSE}
+library(knitr)
+library(tidyverse)
+library(dplyr)
+library(pander)
+library(kableExtra)
+```
 
-... I think ...
+```{r eval=FALSE, include=FALSE}
+
+# t <- data.frame(image = c( "./images/people/katharina_zarnack.png") %>% pander::pandoc.image.return(), name = c("kathi"))
+
+#pander(t, col.names = NULL) 
+
+
+tbl_img <- data.frame(
+     logo = "",
+  name = c( cat("**Kathi Zarnack** \n \n 
+            Group leader")))
+
+
+tbl_img %>%
+  kbl(booktabs = T, col.names = NULL) %>%
+  kable_paper(full_width = T) %>%
+  column_spec(1, image = "./images/people/katharina_zarnack.png") %>%
+    column_spec(2, width = "20em")  %>%
+  kable_styling(font_size = 20)
+
+```
+
+
+## Our favorite Boss
+::: {layout="[30,70]"}
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/katharina_zarnack.png")
+```
+
+### Kathi Zarnack
+ \n
+ Group leader
+
+:::
+
+
+## Group members
+
+::: {layout="[33,33,33]"}
+```{r , echo=FALSE, fig.subcap = c("**Mirko Brüggemann**"), fig.cap = ("Postdoc")}
+
+include_graphics(path="images/people/mirko_brueggemann.png")
+
+```
+
+![**Mirko Brüggemann** \n \n Postdoc \n \n strange guy](/images/people/mirko_brueggemann.png){#fig-elephant}
+
+```{r , echo=FALSE, fig.cap = c("**You Zhou** \\linebreak phD student")}
+include_graphics(path="images/people/you_zhou.png" )
+```
+
+
+:::
+
+## Group members
+
+::: {layout="[30,20,30,20]"}
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/mirko_brueggemann.png")
+
+```
+
+### Mirko Brüggemann
+Postdoc
+\linebreak
+strange guy
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/you_zhou.png" )
+```
+
+### You Zhou
+- phD student
+- nice sunglasses
+
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/melina_klostermann.png")
+```
+
+### Melina Klostermann
+phD student
+\linebreak
+
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/andre_brezski.png")
+```
+
+### Andre Brezki
+phD student
+\linebreak
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/dominik_stroh.png")
+```
+
+### Dominik Stroh
+phD student
+\linebreak
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/jonas_busam.png")
+```
+
+### Jonas Busam
+Master Student
+\linebreak
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/cem_bakisoglu.png")
+```
+
+### Cem Bakisoglu
+Master Student
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/annika_ladwig.png")
+```
+
+### Annika Ladwig
+HiWi
+
+\linebreak
+
+
+:::
+
+## Collaborations
+
+::: {layout="[30,20,30,20]"}
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/clara_hernandez_canas.png")
+```
+
+### Clara Hernandez Canas
+associated phD student (Müller-McNicoll group Uni Frankfurt)
+
+:::
+
+## Previous members
+
+
+## Impressions
+::: {layout="[50,50]"}
+```{r , echo=FALSE}
+include_graphics(path="images/people/group.jpg")
+```
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/Group_2023_hiking.jpeg")
+```
+
+:::
+
+
+
