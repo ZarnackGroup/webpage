@@ -5,70 +5,22 @@ title: People
 
 ```{r include=FALSE}
 library(knitr)
-library(tidyverse)
-library(dplyr)
-library(pander)
-library(kableExtra)
-```
-
-```{r eval=FALSE, include=FALSE}
-
-# t <- data.frame(image = c( "./images/people/katharina_zarnack.png") %>% pander::pandoc.image.return(), name = c("kathi"))
-
-#pander(t, col.names = NULL) 
-
-
-tbl_img <- data.frame(
-     logo = "",
-  name = c( cat("**Kathi Zarnack** \n \n 
-            Group leader")))
-
-
-tbl_img %>%
-  kbl(booktabs = T, col.names = NULL) %>%
-  kable_paper(full_width = T) %>%
-  column_spec(1, image = "./images/people/katharina_zarnack.png") %>%
-    column_spec(2, width = "20em")  %>%
-  kable_styling(font_size = 20)
-
 ```
 
 
-## Our favorite Boss
-::: {layout="[30,70]"}
+## The Group
+
+
+::: {layout="[30,20,30,20]"}
 
 ```{r , echo=FALSE}
 include_graphics(path="images/people/katharina_zarnack.png")
 ```
 
 ### Kathi Zarnack
- \n
- Group leader
-
-:::
+Group leader
 
 
-## Group members
-
-::: {layout="[33,33,33]"}
-```{r , echo=FALSE, fig.subcap = c("**Mirko Brüggemann**"), fig.cap = ("Postdoc")}
-
-include_graphics(path="images/people/mirko_brueggemann.png")
-
-```
-
-![**Mirko Brüggemann** \n \n Postdoc \n \n strange guy](/images/people/mirko_brueggemann.png){#fig-elephant}
-
-```{r , echo=FALSE, fig.cap = c("**You Zhou** \\linebreak phD student")}
-include_graphics(path="images/people/you_zhou.png" )
-```
-
-
-:::
-
-## Group members
-
-::: {layout="[30,20,30,20]"}
 
 ```{r , echo=FALSE}
 include_graphics(path="images/people/mirko_brueggemann.png")
@@ -77,16 +29,15 @@ include_graphics(path="images/people/mirko_brueggemann.png")
 
 ### Mirko Brüggemann
 Postdoc
-\linebreak
-strange guy
+
 
 ```{r , echo=FALSE}
 include_graphics(path="images/people/you_zhou.png" )
 ```
 
 ### You Zhou
-- phD student
-- nice sunglasses
+PhD student
+
 
 
 ```{r , echo=FALSE}
@@ -94,7 +45,7 @@ include_graphics(path="images/people/melina_klostermann.png")
 ```
 
 ### Melina Klostermann
-phD student
+PhD student
 \linebreak
 
 
@@ -103,7 +54,7 @@ include_graphics(path="images/people/andre_brezski.png")
 ```
 
 ### Andre Brezki
-phD student
+PhD student
 \linebreak
 
 ```{r , echo=FALSE}
@@ -111,8 +62,16 @@ include_graphics(path="images/people/dominik_stroh.png")
 ```
 
 ### Dominik Stroh
-phD student
+PhD student
 \linebreak
+
+
+```{r , echo=FALSE}
+include_graphics(path="images/people/clara_hernandez_canas.png")
+```
+
+### Clara Hernandez Canas
+joined PhD student (Müller-McNicoll group Uni Frankfurt)
 
 ```{r , echo=FALSE}
 include_graphics(path="images/people/jonas_busam.png")
@@ -141,21 +100,16 @@ HiWi
 
 :::
 
-## Collaborations
-
-::: {layout="[30,20,30,20]"}
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/clara_hernandez_canas.png")
-```
-
-### Clara Hernandez Canas
-associated phD student (Müller-McNicoll group Uni Frankfurt)
-
-:::
 
 ## Previous members
+::: {layout="[25,25,25,25]"}
 
+```{r , echo=FALSE, fig.cap= "Mario Keller"}
+include_graphics(path="images/people/mario_keller.png" )
+```
+
+
+:::
 
 ## Impressions
 ::: {layout="[50,50]"}
