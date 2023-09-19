@@ -1,126 +1,63 @@
 ---
 title: People
-
 ---
 
 ```{r include=FALSE}
 library(knitr)
+library(tidyverse)
+library(dplyr)
+library(pander)
+library(kableExtra)
 ```
 
+```{r eval=FALSE, include=FALSE}
 
-## The Group
+# t <- data.frame(image = c( "./images/people/katharina_zarnack.png") %>% pander::pandoc.image.return(), name = c("kathi"))
+
+#pander(t, col.names = NULL) 
 
 
-::: {layout="[30,20,30,20]"}
+tbl_img <- data.frame(
+     logo = "",
+  name = c( cat("**Kathi Zarnack** \n \n 
+            Group leader")))
 
+
+tbl_img %>%
+  kbl(booktabs = T, col.names = NULL) %>%
+  kable_paper(full_width = T) %>%
+  column_spec(1, image = "./images/people/katharina_zarnack.png") %>%
+    column_spec(2, width = "20em")  %>%
+  kable_styling(font_size = 20)
+
+```
+
+# Our Boss
+
+
+
+::: {layout="[30,70]"}
 ```{r , echo=FALSE}
 include_graphics(path="images/people/katharina_zarnack.png")
 ```
 
 ### Kathi Zarnack
+
 Group leader
 
 
 
-```{r , echo=FALSE}
-include_graphics(path="images/people/mirko_brueggemann.png")
-
-```
-
-### Mirko Brüggemann
-Postdoc
-
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/you_zhou.png" )
-```
-
-### You Zhou
-PhD student
-
-
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/melina_klostermann.png")
-```
-
-### Melina Klostermann
-PhD student
-\linebreak
-
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/andre_brezski.png")
-```
-
-### Andre Brezki
-PhD student
-\linebreak
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/dominik_stroh.png")
-```
-
-### Dominik Stroh
-PhD student
-\linebreak
-
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/clara_hernandez_canas.png")
-```
-
-### Clara Hernandez Canas
-joined PhD student (Müller-McNicoll group Uni Frankfurt)
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/jonas_busam.png")
-```
-
-### Jonas Busam
-Master Student
-\linebreak
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/cem_bakisoglu.png")
-```
-
-### Cem Bakisoglu
-Master Student
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/annika_ladwig.png")
-```
-
-### Annika Ladwig
-HiWi
-
-\linebreak
-
-
 :::
 
 
-## Previous members
-::: {layout="[25,25,25,25]"}
 
-```{r , echo=FALSE, fig.cap= "Mario Keller"}
-include_graphics(path="images/people/mario_keller.png" )
-```
+# Group members
 
-
-:::
-
-## Impressions
-::: {layout="[50,50]"}
+::: {layout="[30,70]"}
+# Our Boss
 ```{r , echo=FALSE}
-include_graphics(path="images/people/group.jpg")
+include_graphics(path="images/people/katharina_zarnack.png")
 ```
-
-```{r , echo=FALSE}
-include_graphics(path="images/people/Group_2023_hiking.jpeg")
-```
-
 :::
 
 
