@@ -2,7 +2,6 @@
 title: "Sources and consequences of intrinsic genomic instability across human cell types"
 description: "Fill this."
 author: "Dominik Stroh"
-date: "2023-06-30"
 image: mkrn_icon.png
 draft: false
 categories:

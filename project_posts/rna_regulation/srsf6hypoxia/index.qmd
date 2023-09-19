@@ -2,7 +2,6 @@
 title: "SRSF6 poison cassette exon splicing as hypoxia response"
 description: "Poison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia"
 author: "Mirko Brüggemann"
-date: "2023-01-09"
 image: hypoxia_icon.png
 draft: false
 categories:
