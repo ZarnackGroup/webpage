@@ -2,7 +2,6 @@
 title: "m6Aboost"
 description: "This package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the m6Aboost model."
 author: "You Zhou"
-date: "2021-09-21"
 image: icon_m6Aboost.png
 draft: false
 categories:

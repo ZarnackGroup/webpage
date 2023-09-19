@@ -11,28 +11,28 @@
     "href": "tools.html",
     "title": "Tools",
     "section": "",
-    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\nJun 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tools.html#rbioconductor-software-packages",
     "href": "tools.html#rbioconductor-software-packages",
     "title": "Tools",
     "section": "R/Bioconductor software packages",
-    "text": "R/Bioconductor software packages\nWe contribute to the Bioconductor project with the following tools …\n\n\n\n\n\n\n\n\n\n\nBindingSiteFinder\n\n\nAn R/ Bioconductor software package for RBP binding site definition\n\n\n\nMirko Brüggemann\n\n\nOct 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDifferential binding\n\n\nA BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation\n\n\n\nMirko Brüggemann\n\n\nMar 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncliProfiler\n\n\nAn easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide…\n\n\n\nYou Zhou\n\n\nSep 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nm6Aboost\n\n\nThis package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the…\n\n\n\nYou Zhou\n\n\nSep 21, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "R/Bioconductor software packages\nWe contribute to the Bioconductor project with the following tools …\n\n\n\n\n\n\n\n\n\n\nBindingSiteFinder\n\n\nAn R/ Bioconductor software package for RBP binding site definition\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDifferential binding\n\n\nA BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncliProfiler\n\n\nAn easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide…\n\n\n\nYou Zhou\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nm6Aboost\n\n\nThis package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the…\n\n\n\nYou Zhou\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tools.html#circrnas",
     "href": "tools.html#circrnas",
     "title": "Tools",
     "section": "circRNAs",
-    "text": "circRNAs\nCircular RNA detection …\n\n\n\n\n\n\n\n\n\n\nCalcifer: A workflow for circRNA detection and analysis\n\n\nCalcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets.\n\n\n\nAndre Brezski\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "circRNAs\nCircular RNA detection …\n\n\n\n\n\n\n\n\n\n\nCalcifer: A workflow for circRNA detection and analysis\n\n\nCalcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\n\n\n\nMirko Brüggemann\n\n\nOct 22, 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\n\n\n\nMirko Brüggemann\n\n\nJan 9, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\n\n\n\nMirko Brüggemann\n\n\nDec 29, 2020\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html#regulatory-mechanisms-in-human-pathophysiology",
@@ -46,7 +46,7 @@
     "href": "projects.html#dna-stability",
     "title": "Projects",
     "section": "DNA stability",
-    "text": "DNA stability\nIf you are not stable you are not a DNA\n\n\n\n\n\n\n\n\n\n\nSources and consequences of intrinsic genomic instability across human cell types\n\n\nFill this.\n\n\n\nDominik Stroh\n\n\nJun 30, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "DNA stability\nIf you are not stable you are not a DNA\n\n\n\n\n\n\n\n\n\n\nSources and consequences of intrinsic genomic instability across human cell types\n\n\nFill this.\n\n\n\nDominik Stroh\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -67,7 +67,7 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Group leader\n\n\n\n\n\n\n\n\nPostdoc\n\n\n\n\n\n\n\n\n\n\nPhD student\n\n\n\n\n\n\n\n\nPhD student \n\n\n\n\n\n\n\n\n\n\nPhD student \n\n\n\n\n\n\n\n\nPhD student \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt)\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\nHiWi"
+    "text": "Group leader kathi.zarnack-at-bmls.de\n\n\n\n\n\n\n\n\nPostdoc mirko.brueggemann-at-bmls.de\n\n\n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\nHiWi"
   },
   {
     "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html",
@@ -163,9 +163,9 @@
   {
     "objectID": "tools_posts/clip_processing/raccon/index.html",
     "href": "tools_posts/clip_processing/raccon/index.html",
-    "title": "racoon - complete CLIP processing from one single command",
+    "title": "racoon_clip - complete CLIP processing from one single command",
     "section": "",
-    "text": "racoon is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nA link with the documentation follows shortly."
+    "text": "racoon_clip is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nYou can find the documentation here."
   },
   {
     "objectID": "people_2.html",
