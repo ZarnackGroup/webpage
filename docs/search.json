@@ -65,9 +65,9 @@
   {
     "objectID": "people.html",
     "href": "people.html",
-    "title": "The Zarnack Group",
+    "title": "People",
     "section": "",
-    "text": "We are the good people\n… I think …"
+    "text": "Group leader\n\n\n\n\n\n\n\n\nPostdoc\n\n\n\n\n\n\n\n\n\n\nPhD student\n\n\n\n\n\n\n\n\nPhD student \n\n\n\n\n\n\n\n\n\n\nPhD student \n\n\n\n\n\n\n\n\nPhD student \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt)\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\nHiWi"
   },
   {
     "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html",
@@ -166,5 +166,82 @@
     "title": "racoon - complete CLIP processing from one single command",
     "section": "",
     "text": "racoon is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nA link with the documentation follows shortly."
+  },
+  {
+    "objectID": "people_2.html",
+    "href": "people_2.html",
+    "title": "People",
+    "section": "",
+    "text": "Group leader"
+  },
+  {
+    "objectID": "people_2.html#group-members",
+    "href": "people_2.html#group-members",
+    "title": "People",
+    "section": "Group members",
+    "text": "Group members\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\nPostdoc\n\n\n\n\n\nFigure 1: Mirko Brüggemann Postdoc strange guy\n\n\n\n\n\n\n\n\nYou Zhou phD student"
+  },
+  {
+    "objectID": "people_2.html#collaborations",
+    "href": "people_2.html#collaborations",
+    "title": "People",
+    "section": "Collaborations",
+    "text": "Collaborations\n\n\n\n\n\n\n\n\nClara Hernandez Canas\nassociated phD student (Müller-McNicoll group Uni Frankfurt)"
+  },
+  {
+    "objectID": "people_2.html#group-members-1",
+    "href": "people_2.html#group-members-1",
+    "title": "People",
+    "section": "Group members",
+    "text": "Group members\n\n\n\n\n\n\n\n\nMirko Brüggemann\nPostdoc strange guy\n\n\n\n\n\n\n\nYou Zhou\n\nphD student\nnice sunglasses\n\n\n\n\n\n\n\n\n\n\nMelina Klostermann\nphD student \n\n\n\n\n\n\n\nAndre Brezki\nphD student \n\n\n\n\n\n\n\n\n\nDominik Stroh\nphD student \n\n\n\n\n\n\n\nJonas Busam\nMaster Student \n\n\n\n\n\n\n\n\n\nCem Bakisoglu\nMaster Student\n\n\n\n\n\n\n\nAnnika Ladwig\nHiWi"
+  },
+  {
+    "objectID": "people_2.html#previous-members",
+    "href": "people_2.html#previous-members",
+    "title": "People",
+    "section": "Previous members",
+    "text": "Previous members"
+  },
+  {
+    "objectID": "people_2.html#impressions",
+    "href": "people_2.html#impressions",
+    "title": "People",
+    "section": "Impressions",
+    "text": "Impressions"
+  },
+  {
+    "objectID": "people.html#group-members",
+    "href": "people.html#group-members",
+    "title": "People",
+    "section": "Group members",
+    "text": "Group members\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\nPostdoc\n\n\n\n\n\nFigure 1: Mirko Brüggemann Postdoc strange guy\n\n\n\n\n\n\n\n\nYou Zhou phD student"
+  },
+  {
+    "objectID": "people.html#group-members-1",
+    "href": "people.html#group-members-1",
+    "title": "People",
+    "section": "Group members",
+    "text": "Group members\n\n\n\n\n\n\n\n\nMirko Brüggemann\nPostdoc strange guy\n\n\n\n\n\n\n\nYou Zhou\n\nphD student\nnice sunglasses\n\n\n\n\n\n\n\n\n\n\nMelina Klostermann\nphD student \n\n\n\n\n\n\n\nAndre Brezki\nphD student \n\n\n\n\n\n\n\n\n\nDominik Stroh\nphD student \n\n\n\n\n\n\n\nJonas Busam\nMaster Student \n\n\n\n\n\n\n\n\n\nCem Bakisoglu\nMaster Student\n\n\n\n\n\n\n\nAnnika Ladwig\nHiWi"
+  },
+  {
+    "objectID": "people.html#collaborations",
+    "href": "people.html#collaborations",
+    "title": "People",
+    "section": "Collaborations",
+    "text": "Collaborations\n\n\n\n\n\n\n\n\nClara Hernandez Canas\nassociated phD student (Müller-McNicoll group Uni Frankfurt)"
+  },
+  {
+    "objectID": "people.html#previous-members",
+    "href": "people.html#previous-members",
+    "title": "People",
+    "section": "Previous members",
+    "text": "Previous members\n\n\n\n\n\n\n\nMario Keller"
+  },
+  {
+    "objectID": "people.html#impressions",
+    "href": "people.html#impressions",
+    "title": "People",
+    "section": "Impressions",
+    "text": "Impressions"
   }
 ]

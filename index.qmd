@@ -21,7 +21,14 @@ RNA-binding proteins (RBPs) are critical players in the posttranscriptional cont
 
 ### Funding
 
+::: {layout="[20,20,20,20]"}
 [![](./images/logos/gu.png)](https://www.uni-frankfurt.de/){fig-alt="Goethe University" width=40}
+
 [![](./images/logos/sfb902.png)](https://sfb902.wordpress.com/){fig-alt="SFB902" width=40}
+
 [![](./images/logos/sfb1361_logo.png)](https://www.sfb1361.de/){fig-alt="SFB1361" width=40}
+
 [![](./images/logos/FOR2333-logo-no-background-2.png)](https://for2333.de//){fig-alt="FOR2333" width=40}
+
+
+:::

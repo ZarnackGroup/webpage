@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Zarnack Group - Tools</title>
+<title>The Zarnack Group - People</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,93 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-clip-processing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-clip-processing'] = new List('listing-clip-processing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-bioconductor .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-bioconductor'] = new List('listing-bioconductor', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-circrna .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-circrna'] = new List('listing-circrna', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -178,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./tools.html" aria-current="page">
+    <a class="nav-link" href="./tools.html">
  <span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
@@ -211,9 +123,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#clip-data-processing" id="toc-clip-data-processing" class="nav-link active" data-scroll-target="#clip-data-processing">CLIP data processing</a></li>
-  <li><a href="#rbioconductor-software-packages" id="toc-rbioconductor-software-packages" class="nav-link" data-scroll-target="#rbioconductor-software-packages">R/Bioconductor software packages</a></li>
-  <li><a href="#circrnas" id="toc-circrnas" class="nav-link" data-scroll-target="#circrnas">circRNAs</a></li>
+  <li><a href="#our-favorite-boss" id="toc-our-favorite-boss" class="nav-link active" data-scroll-target="#our-favorite-boss">Our favorite Boss</a></li>
+  <li><a href="#group-members" id="toc-group-members" class="nav-link" data-scroll-target="#group-members">Group members</a></li>
+  <li><a href="#group-members-1" id="toc-group-members-1" class="nav-link" data-scroll-target="#group-members-1">Group members</a></li>
+  <li><a href="#collaborations" id="toc-collaborations" class="nav-link" data-scroll-target="#collaborations">Collaborations</a></li>
+  <li><a href="#previous-members" id="toc-previous-members" class="nav-link" data-scroll-target="#previous-members">Previous members</a></li>
+  <li><a href="#impressions" id="toc-impressions" class="nav-link" data-scroll-target="#impressions">Impressions</a></li>
   </ul>
 </nav>
     </div>
@@ -222,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tools</h1>
+<h1 class="title">People</h1>
 </div>
 
 
@@ -237,208 +152,186 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="clip-data-processing" class="level2">
-<h2 class="anchored" data-anchor-id="clip-data-processing">CLIP data processing</h2>
-<p>We provide xxx</p>
-<div id="listing-clip-processing" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="package development,software,Bioconductor,Binding sites,R,iCLIP,RBP" data-listing-date-sort="1590962400000" data-listing-file-modified-sort="1688471457419" data-listing-reading-time-sort="0.6">
-<a href="./tools_posts/clip_processing/clipmethods/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/clip_processing/clipmethods/methods_icon.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A bioinformatics pipeline for iCLIP data analysis
-</h5>
-<div class="card-text listing-description">
-iCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Mirko Brüggemann
-</div>
-<div class="listing-date">
-Jun 1, 2020
+<section id="our-favorite-boss" class="level2">
+<h2 class="anchored" data-anchor-id="our-favorite-boss">Our favorite Boss</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/katharina_zarnack.png" class="img-fluid" width="159"></p>
 </div>
 </div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="CLIP,RNA binding proteins,commandline" data-listing-file-modified-sort="1688477705210" data-listing-reading-time-sort="0.195">
-<a href="./tools_posts/clip_processing/raccon/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/clip_processing/raccon/Racoon_logo.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-racoon - complete CLIP processing from one single command
-</h5>
-<div class="card-text listing-description">
-racoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Melina Klostermann
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
+<section id="kathi-zarnack" class="level3 quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="kathi-zarnack">Kathi Zarnack</h3>
+<p> Group leader</p>
+</section>
 </div>
 </div>
 </section>
-<section id="rbioconductor-software-packages" class="level2">
-<h2 class="anchored" data-anchor-id="rbioconductor-software-packages">R/Bioconductor software packages</h2>
-<p>We contribute to the <em>Bioconductor</em> project with the following tools …</p>
-<div id="listing-bioconductor" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="package development,software,Bioconductor,R,iCLIP,RBP" data-listing-date-sort="1633039200000" data-listing-file-modified-sort="1688471457414" data-listing-reading-time-sort="0.31">
-<a href="./tools_posts/bioconductor/bindingsitefinder/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/bioconductor/bindingsitefinder/bsf_icon.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-BindingSiteFinder
-</h5>
-<div class="card-text listing-description">
-An R/ Bioconductor software package for RBP binding site definition
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Mirko Brüggemann
-</div>
-<div class="listing-date">
-Oct 1, 2021
+<section id="group-members" class="level2">
+<h2 class="anchored" data-anchor-id="group-members">Group members</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/people/mirko_brueggemann.png" class="img-fluid figure-img" width="1200"></p>
+<p></p><figcaption class="figure-caption"><strong>Mirko Brüggemann</strong></figcaption><p></p>
+</figure>
 </div>
 </div>
+<p>Postdoc</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-elephant" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/people/mirko_brueggemann.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: <strong>Mirko Brüggemann</strong> Postdoc strange guy</figcaption><p></p>
+</figure>
 </div>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="package development,software,Bioconductor,R,iCLIP,Binding sites,RBP" data-listing-date-sort="1677625200000" data-listing-file-modified-sort="1688471457415" data-listing-reading-time-sort="0.345">
-<a href="./tools_posts/bioconductor/differentialbinding/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/bioconductor/differentialbinding/diff_icon.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Differential binding
-</h5>
-<div class="card-text listing-description">
-A BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Mirko Brüggemann
-</div>
-<div class="listing-date">
-Mar 1, 2023
+<div class="cell quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/people/you_zhou.png" class="img-fluid figure-img" width="516"></p>
+<p></p><figcaption class="figure-caption"><strong>You Zhou</strong> phD student</figcaption><p></p>
+</figure>
 </div>
 </div>
 </div>
 </div>
-</a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Bioconductor,R,CLIP,Visualization" data-listing-date-sort="1632175200000" data-listing-file-modified-sort="1688471457415" data-listing-reading-time-sort="0.515">
-<a href="./tools_posts/bioconductor/cliProfiler/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/bioconductor/cliProfiler/icon_cliProfiler.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-cliProfiler
-</h5>
-<div class="card-text listing-description">
-An easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-You Zhou
-</div>
-<div class="listing-date">
-Sep 21, 2021
+</section>
+<section id="group-members-1" class="level2">
+<h2 class="anchored" data-anchor-id="group-members-1">Group members</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/mirko_brueggemann.png" class="img-fluid" width="1200"></p>
 </div>
 </div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Bioconductor,R,miCLIP,Machine learning" data-listing-date-sort="1632175200000" data-listing-file-modified-sort="1688471457416" data-listing-reading-time-sort="1.16">
-<a href="./tools_posts/bioconductor/m6Aboost/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/bioconductor/m6Aboost/icon_m6Aboost.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-m6Aboost
-</h5>
-<div class="card-text listing-description">
-This package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-You Zhou
-</div>
-<div class="listing-date">
-Sep 21, 2021
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<section id="mirko-brüggemann" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="mirko-brüggemann">Mirko Brüggemann</h3>
+<p>Postdoc strange guy</p>
 </section>
-<section id="circrnas" class="level2">
-<h2 class="anchored" data-anchor-id="circrnas">circRNAs</h2>
-<p>Circular RNA detection …</p>
-<div id="listing-circrna" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="software,python,circRNA" data-listing-file-modified-sort="1688471457418" data-listing-reading-time-sort="2.425">
-<a href="./tools_posts/circrna/calcifer/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./tools_posts/circrna/calcifer/calcifer_icon.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Calcifer: A workflow for circRNA detection and analysis
-</h5>
-<div class="card-text listing-description">
-Calcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Andre Brezski
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/you_zhou.png" class="img-fluid" width="516"></p>
 </div>
 </div>
+<section id="you-zhou" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="you-zhou">You Zhou</h3>
+<ul>
+<li>phD student</li>
+<li>nice sunglasses</li>
+</ul>
+</section>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/melina_klostermann.png" class="img-fluid" width="130"></p>
 </div>
 </div>
-</a>
+<section id="melina-klostermann" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="melina-klostermann">Melina Klostermann</h3>
+<p>phD student </p>
+</section>
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/andre_brezski.png" class="img-fluid" width="450"></p>
 </div>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
+<section id="andre-brezki" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="andre-brezki">Andre Brezki</h3>
+<p>phD student </p>
+</section>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/dominik_stroh.png" class="img-fluid" width="900"></p>
 </div>
 </div>
+<section id="dominik-stroh" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="dominik-stroh">Dominik Stroh</h3>
+<p>phD student </p>
+</section>
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/jonas_busam.png" class="img-fluid" width="1050"></p>
+</div>
+</div>
+<section id="jonas-busam" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="jonas-busam">Jonas Busam</h3>
+<p>Master Student </p>
+</section>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/cem_bakisoglu.png" class="img-fluid" width="1200"></p>
+</div>
+</div>
+<section id="cem-bakisoglu" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="cem-bakisoglu">Cem Bakisoglu</h3>
+<p>Master Student</p>
+</section>
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/annika_ladwig.png" class="img-fluid" width="717"></p>
+</div>
+</div>
+<section id="annika-ladwig" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="annika-ladwig">Annika Ladwig</h3>
+<p>HiWi</p>
+</section>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 
+</div>
+</div>
+</div>
+</section>
+<section id="collaborations" class="level2">
+<h2 class="anchored" data-anchor-id="collaborations">Collaborations</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/clara_hernandez_canas.png" class="img-fluid" width="375"></p>
+</div>
+</div>
+<section id="clara-hernandez-canas" class="level3 quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<h3 class="anchored" data-anchor-id="clara-hernandez-canas">Clara Hernandez Canas</h3>
+<p>associated phD student (Müller-McNicoll group Uni Frankfurt)</p>
+</section>
+</div>
+</div>
+</section>
+<section id="previous-members" class="level2">
+<h2 class="anchored" data-anchor-id="previous-members">Previous members</h2>
+</section>
+<section id="impressions" class="level2">
+<h2 class="anchored" data-anchor-id="impressions">Impressions</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/group.jpg" class="img-fluid" width="1500"></p>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="images/people/Group_2023_hiking.jpeg" class="img-fluid" width="684"></p>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>

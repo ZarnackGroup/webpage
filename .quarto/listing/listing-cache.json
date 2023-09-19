@@ -9,6 +9,11 @@
       "project_posts/dna_stability/**/index.qmd",
       "project_posts/rna_regulation/**/index.qmd",
       "project_posts/disease/**/index.qmd"
+    ],
+    "people.qmd": [
+      "project_peoples_posts/Kathi/**/index.qmd",
+      "project_peoples_posts/now/**/index.qmd",
+      "project_peoples_posts/gone/**/index.qmd"
     ]
   }
 }
