@@ -11,14 +11,14 @@
     "href": "tools.html",
     "title": "Tools",
     "section": "",
-    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\nJun 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tools.html#rbioconductor-software-packages",
     "href": "tools.html#rbioconductor-software-packages",
     "title": "Tools",
     "section": "R/Bioconductor software packages",
-    "text": "R/Bioconductor software packages\nWe contribute to the Bioconductor project with the following tools …\n\n\n\n\n\n\n\n\n\n\nBindingSiteFinder\n\n\nAn R/ Bioconductor software package for RBP binding site definition\n\n\n\nMirko Brüggemann\n\n\nOct 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDifferential binding\n\n\nA BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation\n\n\n\nMirko Brüggemann\n\n\nMar 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncliProfiler\n\n\nAn easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide…\n\n\n\nYou Zhou\n\n\nSep 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nm6Aboost\n\n\nThis package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the…\n\n\n\nYou Zhou\n\n\nSep 21, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "R/Bioconductor software packages\nWe contribute to the Bioconductor project with the following tools …\n\n\n\n\n\n\n\n\n\n\nBindingSiteFinder\n\n\nAn R/ Bioconductor software package for RBP binding site definition\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDifferential binding\n\n\nA BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncliProfiler\n\n\nAn easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide…\n\n\n\nYou Zhou\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nm6Aboost\n\n\nThis package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the…\n\n\n\nYou Zhou\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tools.html#circrnas",
@@ -163,9 +163,9 @@
   {
     "objectID": "tools_posts/clip_processing/raccon/index.html",
     "href": "tools_posts/clip_processing/raccon/index.html",
-    "title": "racoon - complete CLIP processing from one single command",
+    "title": "racoon_clip - complete CLIP processing from one single command",
     "section": "",
-    "text": "racoon is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nA link with the documentation follows shortly."
+    "text": "racoon_clip is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nYou can find the documentation here."
   },
   {
     "objectID": "people_2.html",

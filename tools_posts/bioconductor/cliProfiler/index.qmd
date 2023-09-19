@@ -2,7 +2,6 @@
 title: "cliProfiler"
 description: "An easy and fast way to visualize and profile the high-throughput IP data. This package generates the meta gene profile and other profiles. These profiles could provide valuable information for understanding the IP experiment results."
 author: "You Zhou"
-date: "2021-09-21"
 image: icon_cliProfiler.png
 draft: false
 categories:

@@ -1,5 +1,5 @@
 ---
-title: "racoon - complete CLIP processing from one single command"
+title: "racoon_clip - complete CLIP processing from one single command"
 description: "racoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution."
 author: "Melina Klostermann"
 image: Racoon_logo.png
@@ -10,6 +10,8 @@ categories:
   - commandline
 ---
 
-![](./FigureA-C.png) racoon is a commandline tool, that automates the CLIP processing pipeline from [Busch et al. (2020)](https://www.sciencedirect.com/science/article/pii/S1046202318304948). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.
+![](./FigureA-C.png) 
 
-A link with the documentation follows shortly.
+racoon_clip is a commandline tool, that automates the CLIP processing pipeline from [Busch et al. (2020)](https://www.sciencedirect.com/science/article/pii/S1046202318304948). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.
+
+You can find the documentation [here](https://racoon-clip.readthedocs.io/en/latest/).
