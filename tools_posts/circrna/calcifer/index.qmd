@@ -1,7 +1,6 @@
 ---
 title: "Calcifer: A workflow for circRNA detection and analysis"
 description: "Calcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets."
-author: "Andre Brezski"
 image: calcifer_icon.png
 draft: false
 categories:
