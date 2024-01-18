@@ -2,7 +2,7 @@
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "The Zarnack Group",
+    "title": "We teach what we know",
     "section": "",
     "text": "Haha"
   },
@@ -67,7 +67,7 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Group leader kathi.zarnack-at-bmls.de\n\n\n\n\n\n\n\n\nPostdoc mirko.brueggemann-at-bmls.de\n\n\n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\nHiWi"
+    "text": "Group leader kathi.zarnack-at-bmls.de\n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de\n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de\n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\n\n\nHiWi"
   },
   {
     "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html",
@@ -235,7 +235,7 @@
     "href": "people.html#previous-members",
     "title": "People",
     "section": "Previous members",
-    "text": "Previous members\n\n\n\n\n\n\n\nMario Keller"
+    "text": "Previous members\n\n\n\n\n\n\n\nMario Keller\n\n\n\n\n\n\n\n\n\nMirko Brüggemann"
   },
   {
     "objectID": "people.html#impressions",
@@ -250,5 +250,96 @@
     "title": "Contact",
     "section": "",
     "text": "Phone +49 (0)69 798-42506\nFax +49 (0)69 798-763-42506\nkathi.zarnack(at)bmls.de\n\nVisiting Address:\nBMLS Buchmann Institute for Molecular Life Sciences\nGoethe University Frankfurt\nMax von Laue Str. 15, Room 3.655\n60438 Frankfurt/Main\nGermany"
+  },
+  {
+    "objectID": "people.html#the-group",
+    "href": "people.html#the-group",
+    "title": "People",
+    "section": "",
+    "text": "Group leader kathi.zarnack-at-bmls.de\n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de\n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de\n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\n\n\nHiWi"
+  },
+  {
+    "objectID": "tools.html#clip-data-processing",
+    "href": "tools.html#clip-data-processing",
+    "title": "Tools",
+    "section": "",
+    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tools_posts/clip_processing/clipmethods/index.html#a-complete-pipeline-from-sequencing-reads-to-rbp-binding-sites",
+    "href": "tools_posts/clip_processing/clipmethods/index.html#a-complete-pipeline-from-sequencing-reads-to-rbp-binding-sites",
+    "title": "A bioinformatics pipeline for iCLIP data analysis",
+    "section": "",
+    "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional gene regulation. This information can be obtained from individual-nucleotide resolution UV crosslinking and immunoprecipitation (iCLIP) experiments. In this project we discribed the complete bioinformatic data analysis workflow to reliably detect RBP binding sites from iCLIP data. The workflow covers all steps from the initial quality control of the sequencing reads up to peak calling and quantification of RBP binding. For each tool, we explain the specific requirements for iCLIP data analysis and suggest optimized parameter settings.\nThe full manuscript can be found at Methods and an updated version of the binding site definition part is published as the R/ Bioconductor packge BindingSiteFinder Bioconductor page."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/differentialbinding/index.html#the-differential-binding-package-extension",
+    "href": "tools_posts/bioconductor/differentialbinding/index.html#the-differential-binding-package-extension",
+    "title": "Differential binding",
+    "section": "",
+    "text": "Understanding condition specific affinity changes of a RNA-binding protein (RBP) to a known binding site is the next level of understanding (post-) transcriptional regulartory processes in more detail.\nThe DifferentialBinding module will extend the BindingSiteFinder by various new features and functionalities, suited to identify RBP specific binding site changes in a transcriptome wide fashion. The extention is soon to be released and can be found on the BindingSiteFinder Bioconductor page."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/bindingsitefinder/index.html#the-bindingsitefinder-package",
+    "href": "tools_posts/bioconductor/bindingsitefinder/index.html#the-bindingsitefinder-package",
+    "title": "BindingSiteFinder",
+    "section": "",
+    "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional regulatory processes.\nThe BindingSiteFinder software package provides a full workflow for RBP binding site definition. The package provides function as well as rich visualizations and is well integrated in state-of-the-art and widely used Bioconductor classes, such as GenomicRanges and SummarizedExperiments. For details please see the vignette."
+  },
+  {
+    "objectID": "project_posts/dna_stability/DSB/index.html#the-sources-and-consequences-of-dna-fragility-across-human-cell-types-and-diseases.",
+    "href": "project_posts/dna_stability/DSB/index.html#the-sources-and-consequences-of-dna-fragility-across-human-cell-types-and-diseases.",
+    "title": "Endogenous DNA fragility",
+    "section": "",
+    "text": "Our research focuses on understanding the mechanisms behind genome rearrangements caused by DNA double-strand breaks (DSBs). These rearrangements can have both positive and negative effects, contributing to genetic diversity and disease development, particularly cancer. While we have knowledge about externally induced DNA fragile sites, the factors influencing spontaneous DSBs in different genomic regions and the underlying mechanisms remain unknown. In collaboration with our partners, we employ advanced genomics techniques to analyze DNA breaks at the nucleotide level and investigate chromatin interactions using chromosome conformation capture methods. Recent studies have demonstrated that transcription and the three-dimensional folding of the genome influence the occurrence of oncogenic rearrangements induced by chemotherapy. Additionally, our collaborators have identified a class of endogenous DNA fragile hotspots that differ from those induced by drugs. During the next phase of our project, we aim to uncover the sources of intrinsic DNA fragility and explore how they contribute to recurrent rearrangements and tissue-specific oncogenesis. By integrating the genomics data generated in the Roukos lab with computational analysis and machine learning, we will develop a comprehensive collection of intrinsic DNA fragility maps across various human cell types. Our research will investigate the relationship between DNA fragility and gene expression, chromatin organization, and three-dimensional chromosome structure. We will focus on the roles of non-canonical DNA structures, such as R-loops and G-quadruplexes, as well as incomplete topoisomerase actions, and their potential interference with replication and transcription. Utilizing machine learning models, we will construct predictive models for identifying intrinsic DNA fragility in the human genome and identify the most influential features and their interdependencies. Moreover, by integrating our findings with publicly available structural variants identified in cancer patient samples, we aim to identify tissue-specific genomic instability hotspots. Our project seeks to unravel why certain regions of the genome are more prone to breakage, providing valuable insights into the emergence of recurrent genome rearrangements and their association with oncogenesis."
+  },
+  {
+    "objectID": "project_posts/rna_regulation/srsf6hypoxia/index.html#the-effect-of-srsf6-poison-cassette-exon-splicing-in-hypoxia",
+    "href": "project_posts/rna_regulation/srsf6hypoxia/index.html#the-effect-of-srsf6-poison-cassette-exon-splicing-in-hypoxia",
+    "title": "SRSF6 poison cassette exon splicing as hypoxia response",
+    "section": "",
+    "text": "Hypoxia induces massive changes in alternative splicing (AS) to adapt cells to the lack of oxygen. In this project SRSF6 was found to be a key factor in the AS response to hypoxia. A strong reduction in SRSF6 levels in acute hypoxia led to exon skipping and triggered nuclear speckle dispersal as a mechanism for the cell to reprogram the gene expression profile. We found this mechanism to be active in various cancer types and further propose a tumor suppressor function.\nThe full manuscript can be found at Nucleic Acids Research."
+  },
+  {
+    "objectID": "projects.html#learning-the-molecular-code-of-rna-regulation",
+    "href": "projects.html#learning-the-molecular-code-of-rna-regulation",
+    "title": "Projects",
+    "section": "",
+    "text": "RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching.html#and-also-what-we-dont-know",
+    "href": "teaching.html#and-also-what-we-dont-know",
+    "title": "We teach what we know",
+    "section": "",
+    "text": "Haha"
+  },
+  {
+    "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html#the-rna-binding-protein-srsf6-in-human-pancreatic-β-cells",
+    "href": "project_posts/rna_regulation/srsf6diabetes/index.html#the-rna-binding-protein-srsf6-in-human-pancreatic-β-cells",
+    "title": "SRSF6 positioning determines the splicing fate in human pancreatic β-cells",
+    "section": "",
+    "text": "In pancreatic β-cells SRSF6 down-regulation promotes β-cell demise through splicing dysregulation of central genes for β-cells function and survival. In this project we characterized the SRSF6 binding landscape in human pancreatic β-cells and identified a purine-rich SRSF6 consensus motif. We also observed, that the positioning of SRSF6 determined the splicing fate by either promoting exon skipping or exon inclusion. Our results also show that such splicing changes can be modulated by the use of antisense oligonucleotides.\nThe full manuscript can be found at Life Science Alliance."
+  },
+  {
+    "objectID": "project_posts/rna_regulation/mkrn/index.html#the-role-of-mkrn1-in-maintaining-proteome-integrity",
+    "href": "project_posts/rna_regulation/mkrn/index.html#the-role-of-mkrn1-in-maintaining-proteome-integrity",
+    "title": "Ribosome-associated quality control by MKRN1",
+    "section": "",
+    "text": "Translating ribosomes that encounter poly(A) sequences are terminally stalled, as quality control mechanism, followed by ribosome recycling and decay of the truncated nascent polypeptide via ribosome-associated quality control. In this project we demonstrated that the conserved RNA-binding E3 ubiquitin ligase Makorin Ring Finger Protein 1 (MKRN1) promotes ribosome stalling at poly(A) sequences during ribosome-associated quality control. We observed a direct interaction with the cytoplasmic poly(A)-binding protein (PABPC1) as well as precice position upstream of poly(A) tails in the mRNA.Thus we propose that MKRN1 mediates the recognition of poly(A) tails to prevent the production of erroneous proteins from prematurely polyadenylated transcripts, thereby maintaining proteome integrity.\nThe full manuscript can be found at Genome Biology."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/m6Aboost/index.html#the-cliprofiler-package-extension",
+    "href": "tools_posts/bioconductor/m6Aboost/index.html#the-cliprofiler-package-extension",
+    "title": "m6Aboost",
+    "section": "",
+    "text": "{width = “400”, height = “900}\nN6-methyladenosine (m6A) is the most abundant internal modification in mRNA. It impacts many different aspects of an mRNA’s life, e.g. nuclear export, translation, stability, etc.\nm6A individual-nucleotide resolution UV crosslinking and immunoprecipitation (miCLIP) and the improved miCLIP2 are m6A antibody-based methods that allow the transcriptome-wide mapping of m6A sites at a single-nucleotide resolution (Körtel et al. 2021)(Linder et al. 2015). In brief, UV crosslinking of the m6A antibody to the modified RNA leads to truncation of reverse transcription or C-to-T transitions in the case of readthrough. However, due to the limited specificity and high cross-reactivity of the m6A antibodies, the miCLIP data comprise a high background signal, which hampers the reliable identification of m6A sites from the data.\nFor accurately detecting m6A sites, we implemented an AdaBoost-based machine learning model (m6Aboost) for classifying the miCLIP2 peaks into m6A sites and background signals (Körtel et al. 2021). The model was trained on high-confidence m6A sites that were obtained by comparing wildtype and Mettl3 knockout mouse embryonic stem cells (mESC) lacking the major methyltransferase Mettl3. For classification, the m6Aboost model uses a series of features, including the experimental miCLIP2 signal (truncation events and C-to-T transitions) as well as the transcript region (5’UTR, CDS, 3’UTR) and the nucleotide sequence in a 21-nt window around the miCLIP2 peak.\nThe m6Aboost package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/m6Aboost.html."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/cliProfiler/index.html#the-cliprofiler-package-extension",
+    "href": "tools_posts/bioconductor/cliProfiler/index.html#the-cliprofiler-package-extension",
+    "title": "cliProfiler",
+    "section": "",
+    "text": "{width = “600”, height = “600}\nCross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop cliProfiler package. The cliProfiler includes seven functions which allow users easily make different profile plots.\nThe cliProfiler package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html."
   }
 ]

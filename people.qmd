@@ -23,15 +23,6 @@ Group leader *kathi.zarnack-at-bmls.de*
 
 
 ```{r , echo=FALSE, out.width = "400px"}
-include_graphics(path="images/people/mirko_brueggemann.png")
-
-```
-
-### Mirko Brüggemann
-Postdoc *mirko.brueggemann-at-bmls.de*
-
-
-```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/you_zhou.png" )
 ```
 
@@ -106,6 +97,13 @@ HiWi
 ```{r , echo=FALSE, fig.cap= "Mario Keller", out.width = "400px"}
 include_graphics(path="images/people/mario_keller.png" )
 ```
+
+```{r , echo=FALSE, out.width = "400px", fig.cap= "Mirko Brüggemann"}
+include_graphics(path="images/people/mirko_brueggemann.png")
+
+```
+
+
 
 
 :::
