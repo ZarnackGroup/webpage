@@ -11,7 +11,7 @@ library(knitr)
 ## The Group
 
 
-::: {layout="[30,20,30,20]"}
+::: {layout="[25,25,25,25]"}
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/katharina_zarnack.png")
@@ -19,6 +19,7 @@ include_graphics(path="images/people/katharina_zarnack.png")
 
 ### Kathi Zarnack
 Group leader *kathi.zarnack-at-bmls.de*
+\linebreak
 
 
 
@@ -28,6 +29,7 @@ include_graphics(path="images/people/you_zhou.png" )
 
 ### You Zhou
 PhD student *you.zhou-at-bmls.de*
+\linebreak
 
 
 ```{r , echo=FALSE, out.width = "400px"}
@@ -55,6 +57,13 @@ include_graphics(path="images/people/dominik_stroh.png")
 PhD student *d.stroh-at-em.uni-frankfurt.de*
 \linebreak
 
+```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/srimeenakshi_sankaranarayanan.jpg" )
+```
+
+### Srimeenakshi Sankaranara- yanan
+joined Postdoc (Feldbrügge group Uni Düsseldorf) *sankaran-at-hhu.de*
+\linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/clara_hernandez_canas.png")
@@ -62,10 +71,12 @@ include_graphics(path="images/people/clara_hernandez_canas.png")
 
 ### Clara Hernandez Canas
 joined PhD student (Müller-McNicoll group Uni Frankfurt) *HernandezCanas-at-em.uni-frankfurt.de*
+\linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/jonas_busam.png")
 ```
+
 
 ### Jonas Busam
 Master Student
