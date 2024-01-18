@@ -2,8 +2,21 @@
 pagetitle: "Teaching"
 ---
 
-# We teach what we know
+```{r include=FALSE}
+library(knitr)
+```
 
-## and also what we don't know
+# Spezialisierunspraktikum: RNA Bioinformatik
 
-Haha
+Spezialisierung I & II Modul 19H & 20E 
+at FB 15 of Goethe Universität Frankfurt.
+
+
+
+# EMBO Practial Course: iCLIP2: An advanced techinque for protein-RNA interaction mapping
+
+```{r echo=FALSE}
+include_graphics(path="images/24-iclip2.png")
+```
+
+See also <https://meetings.embo.org/event/24-iclip2>.
