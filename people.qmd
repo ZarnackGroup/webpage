@@ -98,6 +98,20 @@ HiWi
 
 \linebreak
 
+```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/ege_yazgan.jpg")
+```
+
+### Ege Yazgan
+HiWi
+
+\linebreak
+
+\linebreak
+
+\linebreak
+
+
 
 :::
 
@@ -105,14 +119,16 @@ HiWi
 ## Previous members
 ::: {layout="[25,25,25,25]"}
 
-```{r , echo=FALSE, fig.cap= "Mario Keller", out.width = "400px"}
-include_graphics(path="images/people/mario_keller.png" )
-```
-
 ```{r , echo=FALSE, out.width = "400px", fig.cap= "Mirko Brüggemann"}
 include_graphics(path="images/people/mirko_brueggemann.png")
 
 ```
+
+```{r , echo=FALSE, fig.cap= "Mario Keller", out.width = "400px"}
+include_graphics(path="images/people/mario_keller.png" )
+```
+
+
 
 
 
