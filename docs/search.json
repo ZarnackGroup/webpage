@@ -11,7 +11,7 @@
     "href": "tools.html",
     "title": "Tools",
     "section": "",
-    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "We provide a complete workflow for the processing of CLIP data and the tool racoon_clip, which automatises this workflow.\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tools.html#rbioconductor-software-packages",
@@ -67,7 +67,7 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\nHiWi"
+    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi"
   },
   {
     "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html",
@@ -235,7 +235,7 @@
     "href": "people.html#previous-members",
     "title": "People",
     "section": "Previous members",
-    "text": "Previous members\n\n\n\n\n\n\n\nMario Keller\n\n\n\n\n\n\n\n\n\nMirko Brüggemann"
+    "text": "Previous members\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\nMario Keller"
   },
   {
     "objectID": "people.html#impressions",
@@ -256,14 +256,14 @@
     "href": "people.html#the-group",
     "title": "People",
     "section": "",
-    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student\n\n\n\n\n\n\n\n\nHiWi"
+    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi"
   },
   {
     "objectID": "tools.html#clip-data-processing",
     "href": "tools.html#clip-data-processing",
     "title": "Tools",
     "section": "",
-    "text": "We provide xxx\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "We provide a complete workflow for the processing of CLIP data and the tool racoon_clip, which automatises this workflow.\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\nMelina Klostermann\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tools_posts/clip_processing/clipmethods/index.html#a-complete-pipeline-from-sequencing-reads-to-rbp-binding-sites",
@@ -341,5 +341,19 @@
     "title": "cliProfiler",
     "section": "",
     "text": "{width = “600”, height = “600}\nCross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop cliProfiler package. The cliProfiler includes seven functions which allow users easily make different profile plots.\nThe cliProfiler package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html."
+  },
+  {
+    "objectID": "project_posts/disease/cafs/index.html#the-role-of-cancer-associated-fibroblasts-in-mammary-carcinoma-development",
+    "href": "project_posts/disease/cafs/index.html#the-role-of-cancer-associated-fibroblasts-in-mammary-carcinoma-development",
+    "title": "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development",
+    "section": "",
+    "text": "Cancer-associated fibroblasts (CAFs) in the tumor microenvironment contribute to all stages of tumorigenesis and are usually considered to be tumor-promoting cells. In this project we found a remarkable degree of CAF herterogenity which changed during mammary cancer development. We created whole transcriptome longitudinal data on CAF development from early- and late-stage tumors and observed a shift in fibroblast populations over time, which was negatively associated with patient survival. We then trained a random forest classification model to compute a gene signature that had predicive power in bulk tumor patient samples.\nThe full manuscript can be found at International Journal of Molecular Sciences."
+  },
+  {
+    "objectID": "project_posts/disease/pge2signaling/index.html#the-effect-of-prostaglandin-e2-signaling-disruption-in-cancer-associated-fibroblasts",
+    "href": "project_posts/disease/pge2signaling/index.html#the-effect-of-prostaglandin-e2-signaling-disruption-in-cancer-associated-fibroblasts",
+    "title": "Prostaglandin E2 Signaling in Cancer-Associated Fibroblasts",
+    "section": "",
+    "text": "The activation and differentiation of cancer-associated fibroblasts (CAF) are involved in tumor progression. Here, we showed that the tumor-promoting lipid mediator prostaglandin E2 (PGE2) plays a paradoxical role in CAF activation and tumor progression. The inflammatory lipid prostaglandin E2 suppresses cancer-associated fibroblast expansion and activation limited primary mammary tumor growth while promoting metastasis. These data characterized in this project suggests a new pathway of regulating inflammatory CAF activation, which affects breast cancer progression.\nThe full manuscript can be found at Cancer Research."
   }
 ]

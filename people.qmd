@@ -1,126 +1,133 @@
 ---
 title: People
-
 ---
 
 ```{r include=FALSE}
 library(knitr)
 ```
 
-
 ## The Group
 
-
 ::: {layout="[25,25,25,25]"}
-
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/katharina_zarnack.png")
 ```
 
 ### Kathi Zarnack
-Group leader *kathi.zarnack-at-bmls.de*
-\linebreak
 
-
+Group leader *kathi.zarnack-at-bmls.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/you_zhou.png" )
 ```
 
 ### You Zhou
-PhD student *you.zhou-at-bmls.de*
-\linebreak
 
+PhD student *you.zhou-at-bmls.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/melina_klostermann.png")
 ```
 
 ### Melina Klostermann
-PhD student *melina.klostermann-at-bmls.de*
-\linebreak
 
+PhD student *melina.klostermann-at-bmls.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/andre_brezski.png")
 ```
 
 ### Andre Brezki
-PhD student *Brezski-at-em.uni-frankfurt.de*
-\linebreak
+
+PhD student *Brezski-at-em.uni-frankfurt.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/dominik_stroh.png")
 ```
 
 ### Dominik Stroh
-PhD student *d.stroh-at-em.uni-frankfurt.de*
-\linebreak
+
+PhD student *d.stroh-at-em.uni-frankfurt.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/srimeenakshi_sankaranarayanan.jpg" )
 ```
 
 ### Srimeenakshi Sankaranara- yanan
-joined Postdoc (Feldbrügge group Uni Düsseldorf) *sankaran-at-hhu.de*
-\linebreak
+
+joined Postdoc (Feldbrügge group Uni Düsseldorf) *sankaran-at-hhu.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/clara_hernandez_canas.png")
 ```
 
 ### Clara Hernandez Canas
-joined PhD student (Müller-McNicoll group Uni Frankfurt) *HernandezCanas-at-em.uni-frankfurt.de*
-\linebreak
+
+joined PhD student (Müller-McNicoll group Uni Frankfurt) *HernandezCanas-at-em.uni-frankfurt.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/jonas_busam.png")
 ```
 
-
 ### Jonas Busam
-Master Student
-\linebreak
+
+Master Student \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/cem_bakisoglu.png")
 ```
 
 ### Cem Bakisoglu
-Master Student
+
+Master Student \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/annika_ladwig.png")
 ```
 
 ### Annika Ladwig
-HiWi
 
-\linebreak
+HiWi \linebreak
 
+
+```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/ege_yazgan.jpg")
+```
+
+### Ege Yazgan
+
+HiWi \linebreak
+
+```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/felix_haidle.png")
+```
+
+### Felix Haidle
+
+HiWi \linebreak
 
 :::
 
-
 ## Previous members
+
 ::: {layout="[25,25,25,25]"}
-
-```{r , echo=FALSE, fig.cap= "Mario Keller", out.width = "400px"}
-include_graphics(path="images/people/mario_keller.png" )
-```
-
 ```{r , echo=FALSE, out.width = "400px", fig.cap= "Mirko Brüggemann"}
 include_graphics(path="images/people/mirko_brueggemann.png")
 
 ```
 
-
-
-
+```{r , echo=FALSE, fig.cap= "Mario Keller", out.width = "400px"}
+include_graphics(path="images/people/mario_keller.png" )
+```
 :::
 
 ## Impressions
+
 ::: {layout="[50,50]"}
+```{r , echo=FALSE}
+include_graphics(path="images/20231129_202412.jpg")
+```
+
 ```{r , echo=FALSE}
 include_graphics(path="images/people/group.jpg")
 ```
@@ -128,8 +135,4 @@ include_graphics(path="images/people/group.jpg")
 ```{r , echo=FALSE}
 include_graphics(path="images/people/Group_2023_hiking.jpeg")
 ```
-
 :::
-
-
-

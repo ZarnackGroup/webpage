@@ -14,7 +14,7 @@ listing:
 
 ## CLIP data processing
 
-We provide xxx
+We provide a complete workflow for the processing of CLIP data and the tool racoon_clip, which automatises this workflow.
 
 ::: {#clip-processing}
 :::

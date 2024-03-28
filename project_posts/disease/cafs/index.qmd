@@ -2,7 +2,7 @@
 title: "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development"
 description: "Cancer-associated fibroblasts populations change over time during mammary carcinoma tumor development"
 author: "SFB-902"
-image: cafs_icon.png
+image: cafs_icon_v2.png
 draft: false
 categories:
   - Cancer
