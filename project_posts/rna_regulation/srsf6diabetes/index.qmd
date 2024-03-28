@@ -2,7 +2,7 @@
 title: "SRSF6 positioning determines the splicing fate in human pancreatic β-cells"
 description: "The RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells"
 author: "Mirko Brüggemann"
-image: srsf6_icon.png
+image: srsf6_icon_v3.png
 draft: false
 categories:
   - Diabetes
