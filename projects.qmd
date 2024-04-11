@@ -29,7 +29,7 @@ RNA metabolism is often disturbed in human disease, including neurodegeneration 
 
 ## DNA stability
 
-If you are not stable you are not a DNA
+Each use of the DNA template poses a risk to its integrity, leading in the worst case to a complete breakage, known as a DNA double-strand break (DSB). Despite sophisticated repair pathways in the DNA damage response that capture most of these, unrepaired DSBs pose a major threat to genomic integrity and, in the worst cases, can lead to serious diseases such as cancer.  Although most DSBs are induced by exogenous agents such as ionising radiation or chemotherapeutic agents, the impact of endogenous cellular mechanisms should not be underestimated. RNA transcription, DNA replication, the 3D organisation of the genome and their interplay are known to be key factors in determining where and when DSB hotspots occur. However, a holistic view of the endogenous totality of DNA double-strand breaks, the breakome, in human cells has not yet been achieved.
 
 :::{#dna-stability}
 :::
