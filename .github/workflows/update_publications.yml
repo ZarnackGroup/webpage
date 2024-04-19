@@ -1,0 +1,27 @@
+name: Monthly Python Script and QMD Rendering
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Executes at 00:00 on the 1st of every month
+
+jobs:
+  run_python_and_render_qmd:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8' # Use the version of Python you need
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt # Replace with your actual requirements
+
+      - name: Run Python script
+        run: python publication_feed_parse.py
+
+      - name: Render QMD file
+        run: quarto render publications.qmd --to html --output-dir docs
