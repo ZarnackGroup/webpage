@@ -82,6 +82,14 @@ include_graphics(path="images/people/cem_bakisoglu.png")
 Master Student \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/annika_bamberger.png")
+```
+
+### Annika Bamberger
+
+Master Student \linebreak
+
+```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/annika_ladwig.png")
 ```
 
@@ -113,10 +121,7 @@ include_graphics(path="images/people/joshua_junga.jpg")
 
 ### Joshua Junga
 
-HiWi \linebreak
-
-\newline
-\newline
+HiWi
 
 :::
 

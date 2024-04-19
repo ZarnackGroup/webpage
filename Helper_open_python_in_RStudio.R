@@ -1,0 +1,5 @@
+library(reticulate)
+use_python("/Applications/anaconda3/bin/python")
+#py_install("feedparser")
+#py_install("pickle")
+reticulate::repl_python()

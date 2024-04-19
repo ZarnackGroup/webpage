@@ -1,9 +1,9 @@
 ---
 title: "Endogenous DNA fragility"
 description: "We investigate sources and consequences of intrinsic genomic instability across human cell types."
-author: "Dominik Stroh"
 image: ../../../images/logos/sfb1361_logo.png
 draft: false
+author: "SFB-1361"
 categories:
   - Genome instability
   - Double-strand breaks

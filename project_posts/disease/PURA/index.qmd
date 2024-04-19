@@ -1,7 +1,6 @@
 ---
 title: "Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome."
 description: "We work on understanding the function of the misterous PURA protein. Mutations in the PURA gene can cause the PURA Syndrome a rare neurodevelopemental disorder."
-author: "Melina Klostermann"
 image: Logo_PURA_pbody.png
 draft: false
 categories:

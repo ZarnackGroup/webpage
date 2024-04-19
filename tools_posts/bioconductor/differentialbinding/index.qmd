@@ -1,8 +1,7 @@
 ---
 title: "Differential binding"
 description: "A BindingSiteFinder R/ Bioconductor software extention for RBP binding site regulation"
-author: "Mirko Brüggemann"
-image: diff_icon.png
+image: diff_binding_logo.png
 draft: false
 categories:
   - package development

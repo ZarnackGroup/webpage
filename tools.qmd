@@ -28,7 +28,7 @@ We contribute to the *Bioconductor* project with the following tools ...
 
 ## circRNAs
 
-Circular RNA detection ...
+We provide a commandline application for the detection of circular RNAs.
 
 ::: {#circrna}
 :::

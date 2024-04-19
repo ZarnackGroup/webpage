@@ -1,8 +1,7 @@
 ---
 title: "A bioinformatics pipeline for iCLIP data analysis"
 description: "iCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites"
-author: "Mirko Brüggemann"
-image: methods_icon.png
+image: methods_icon_v2.png
 draft: false
 categories:
   - package development

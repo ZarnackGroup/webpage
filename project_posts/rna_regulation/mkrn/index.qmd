@@ -1,7 +1,6 @@
 ---
 title: "Ribosome-associated quality control by MKRN1"
 description: "The RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation"
-author: "Mirko Brüggemann"
 image: mkrn_icon_v2.png
 draft: false
 categories:
