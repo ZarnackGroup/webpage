@@ -26,7 +26,7 @@ jobs:
    #    run: pip install -r requirements.txt # Replace with your actual requirements
 
       - name: Run Python script
-        run: python publication_feed_parse.py
+        run: python publications/publication_feed_parse.py
 
       - name: Render QMD file
         run: quarto render publications.qmd --to html --output-dir docs
