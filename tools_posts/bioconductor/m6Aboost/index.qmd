@@ -1,8 +1,7 @@
 ---
 title: "m6Aboost"
 description: "This package can help user to run the m6Aboost model on their own miCLIP2 data. The package includes functions to assign the read counts and get the features to run the m6Aboost model."
-author: "You Zhou"
-image: icon_m6Aboost.png
+image: icon_m6Aboost_v2.png
 draft: false
 categories:
   - Bioconductor

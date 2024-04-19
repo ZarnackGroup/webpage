@@ -1,8 +1,7 @@
 ---
 title: "BindingSiteFinder"
 description: "An R/ Bioconductor software package for RBP binding site definition"
-author: "Mirko Brüggemann"
-image: bsf_icon.png
+image: bsf_icon_v2.png
 draft: false
 categories:
   - package development
