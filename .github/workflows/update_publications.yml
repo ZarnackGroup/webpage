@@ -2,7 +2,7 @@ name: Monthly Python Script and QMD Rendering
 
 on:
   schedule:
-    - cron: '11 22 22 * *' # Executes at 00:00 on the 1st of every month
+    - cron: '0 0 1 * *' # Executes at 00:00 on the 1st of every month
 
 jobs:
   run_python_and_render_qmd:
