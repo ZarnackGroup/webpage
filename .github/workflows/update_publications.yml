@@ -1,4 +1,4 @@
-name: Monthly Python Script and QMD Rendering
+name: Monthly update of publications on webpage
 
 on:
   workflow_dispatch:
