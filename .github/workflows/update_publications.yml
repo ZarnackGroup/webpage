@@ -23,8 +23,8 @@ jobs:
           wget -qO- https://go.quarto.org/installer | sh -
           export PATH="$HOME/.quarto/bin:$PATH"
 
-   #   - name: Install dependencies
-   #    run: pip install -r requirements.txt # Replace with your actual requirements
+      - name: Install dependencies
+       run: pip install -r publications/requirements.txt # Replace with your actual requirements
 
       - name: Run Python script
         run: python publications/publication_feed_parse.py
