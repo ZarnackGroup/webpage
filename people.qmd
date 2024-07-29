@@ -18,20 +18,33 @@ include_graphics(path="images/people/katharina_zarnack.png")
 Group leader *kathi.zarnack-at-bmls.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
-include_graphics(path="images/people/you_zhou.png" )
-```
-
-### You Zhou
-
-PhD student *you.zhou-at-bmls.de* \linebreak
-
-```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/melina_klostermann.png")
 ```
 
 ### Melina Klostermann
 
-PhD student *melina.klostermann-at-bmls.de* \linebreak
+Postdoc *melina.klostermann-at-uni-wuerzburg.de* \linebreak
+
+
+```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/srimeenakshi_sankaranarayanan.jpg" )
+```
+
+
+### Srimeenakshi Sankaranara- yanan
+
+joined Postdoc (Feldbrügge group Uni Düsseldorf) *sankaran-at-hhu.de* \linebreak
+
+```{r , echo=FALSE, out.width = "400px"}
+include_graphics(path="images/people/you_zhou.png" )
+```
+
+
+### You Zhou
+
+PhD student 
+*you.zhou-at-bmls.de* \linebreak
+
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/andre_brezski.png")
@@ -47,31 +60,18 @@ include_graphics(path="images/people/dominik_stroh.png")
 
 ### Dominik Stroh
 
-PhD student *d.stroh-at-em.uni-frankfurt.de* \linebreak
+PhD student *dominik.stroh-at-uni-wuerzburg.de* \linebreak
 
-```{r , echo=FALSE, out.width = "400px"}
-include_graphics(path="images/people/srimeenakshi_sankaranarayanan.jpg" )
-```
-
-### Srimeenakshi Sankaranara- yanan
-
-joined Postdoc (Feldbrügge group Uni Düsseldorf) *sankaran-at-hhu.de* \linebreak
-
-```{r , echo=FALSE, out.width = "400px"}
-include_graphics(path="images/people/clara_hernandez_canas.png")
-```
-
-### Clara Hernandez Canas
-
-joined PhD student (Müller-McNicoll group Uni Frankfurt) *HernandezCanas-at-em.uni-frankfurt.de* \linebreak
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/jonas_busam.png")
 ```
 
-### Jonas Busam
+### Jonas Busam 
 
-Master Student \linebreak
+PhD student *jonas.busam-at-uni-wuerzburg.de* \linebreak
+
+
 
 ```{r , echo=FALSE, out.width = "400px"}
 include_graphics(path="images/people/cem_bakisoglu.png")
@@ -128,6 +128,11 @@ HiWi
 ## Previous members
 
 ::: {layout="[25,25,25,25]"}
+
+```{r , echo=FALSE, out.width = "400px", fig.cap= "Clara Hernandez Canas"}
+include_graphics(path="images/people/clara_hernandez_canas.png")
+```
+
 ```{r , echo=FALSE, out.width = "400px", fig.cap= "Mirko Brüggemann"}
 include_graphics(path="images/people/mirko_brueggemann.png")
 
@@ -136,6 +141,8 @@ include_graphics(path="images/people/mirko_brueggemann.png")
 ```{r , echo=FALSE, fig.cap= "Mario Keller", out.width = "400px"}
 include_graphics(path="images/people/mario_keller.png" )
 ```
+
+
 :::
 
 ## Impressions

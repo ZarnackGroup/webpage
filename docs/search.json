@@ -1,14 +1,133 @@
 [
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Spezialisierunspraktikum: RNA Bioinformatik",
+    "objectID": "tools_posts/clip_processing/raccon/index.html",
+    "href": "tools_posts/clip_processing/raccon/index.html",
+    "title": "racoon_clip - complete CLIP processing from one single command",
     "section": "",
-    "text": "Spezialisierunspraktikum: RNA Bioinformatik\nSpezialisierung I & II Modul 19H & 20E at FB 15 of Goethe Universität Frankfurt.\n\n\nEMBO Practial Course: iCLIP2: An advanced techinque for protein-RNA interaction mapping\n\n\n\n\n\nSee also https://meetings.embo.org/event/24-iclip2."
+    "text": "racoon_clip is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nYou can find the documentation here."
+  },
+  {
+    "objectID": "tools_posts/circrna/calcifer/index.html",
+    "href": "tools_posts/circrna/calcifer/index.html",
+    "title": "Calcifer: A workflow for circRNA detection and analysis",
+    "section": "",
+    "text": "Calcifer: A workflow for circRNA detection and analysis\nAuthor: Andre Brezski, Kathi Zarnack\n\n\n\n1. Introduction\nCalcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets. It allows the evaluation of RNA-Seq read data up to a list of characterized circRNA isoforms, as well as the prediction of possible functions.\n\n\n2. Overview\n\n\n\nCalcifer workflow\n\n\n\n\n3. CircRNA detection\nIn a first step the RNA-seq data is aligned with STAR [1] and bwa [2] against the reference genome. The resulting bam-files are used as input for CIRCexplorer2 [3] and CIRI2 [4] respectively. These both tools yield an unfiltered list of putative circRNAs, which is further processed.\n\n\n4. CircRNA filtering\nThe raw circRNA results from both tools are then further filtered for canonical splice sites, length of the circRNA, encompassing junctions and uniquely mapped back-splice junction reads. At the end only circRNAs which have at least 2 uniquely back-splice junction reads are considered for further analysis.\n\n\n5. Downstream analysis\nBased on the filtered circRNA list there is a broad downstream analysis. To shed light on putative biogenesis and function the downstream analysis consists out of detection of putative miRNA binding, RBP binding and open reading frames.\n\n5.1. Linear and circular count data\nIn general a count matrix for linear and circular mapped reads is created. If needed these can be utilized by the user for differential expression analysis for multiple condition datasets. A rmd-file for a baseline DESeq2 analysis is included in the major workflow folder.\n\n\n5.2. miRNA binding site detection\nMiRNA binding sites are detected by miRanda [5] on the circular exonic sequence for each circRNA. To enable miRNA binding analysis over the back-splice junction sequence, the linear sequence is extended by 25 bp from the opposite end respectively.\n\n\n5.3. RBP binding site detection\nThe RBP binding prediction is performed with FIMO [6] on the same sequence (back-splice junction extended linear exon sequence) and additional on the not included sequence around the back-splice junction. CircRNA biogenesis can be enabled by RBP binding close to the back-splice junction. Also a putative function of circRNAs is the direct binding of RBPs.\n\n\n5.4. ORF prediction\nThe ORF prediction is performed on the linear- as well as the pseudo-circular and multi-cycle exonic circRNA sequence. These enables the prediction of longer ORFs, which span over the back-splice junction as well as multiple reading frames.\n\n\n\nLiterature\n[1] Dobin, Alexander, et al. “STAR: ultrafast universal RNA-seq aligner.” Bioinformatics 29.1 (2013): 15-21.\n[2] Li, H., & Durbin, R. (2009). Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics, 25(14), 1754–1760.\n[3] Zhang, Xiao-Ou, et al. “Diverse alternative back-splicing and alternative splicing landscape of circular RNAs.” Genome research 26.9 (2016): 1277-1287.\n[4] Gao, Yuan, Jinyang Zhang, and Fangqing Zhao. “Circular RNA identification based on multiple seed matching.” Briefings in bioinformatics 19.5 (2018): 803-810.\n[5] John, Bino, et al. “Human microRNA targets.” PLoS biology 2.11 (2004): e363.\n[6] Grant, Charles E., Timothy L. Bailey, and William Stafford Noble. “FIMO: scanning for occurrences of a given motif.” Bioinformatics 27.7 (2011): 1017-1018."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/cliProfiler/index.html",
+    "href": "tools_posts/bioconductor/cliProfiler/index.html",
+    "title": "cliProfiler",
+    "section": "",
+    "text": "{width = “600”, height = “600}\nCross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop cliProfiler package. The cliProfiler includes seven functions which allow users easily make different profile plots.\nThe cliProfiler package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/cliProfiler/index.html#the-cliprofiler-package-extension",
+    "href": "tools_posts/bioconductor/cliProfiler/index.html#the-cliprofiler-package-extension",
+    "title": "cliProfiler",
+    "section": "",
+    "text": "{width = “600”, height = “600}\nCross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop cliProfiler package. The cliProfiler includes seven functions which allow users easily make different profile plots.\nThe cliProfiler package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/m6Aboost/index.html",
+    "href": "tools_posts/bioconductor/m6Aboost/index.html",
+    "title": "m6Aboost",
+    "section": "",
+    "text": "{width = “400”, height = “900}\nN6-methyladenosine (m6A) is the most abundant internal modification in mRNA. It impacts many different aspects of an mRNA’s life, e.g. nuclear export, translation, stability, etc.\nm6A individual-nucleotide resolution UV crosslinking and immunoprecipitation (miCLIP) and the improved miCLIP2 are m6A antibody-based methods that allow the transcriptome-wide mapping of m6A sites at a single-nucleotide resolution (Körtel et al. 2021)(Linder et al. 2015). In brief, UV crosslinking of the m6A antibody to the modified RNA leads to truncation of reverse transcription or C-to-T transitions in the case of readthrough. However, due to the limited specificity and high cross-reactivity of the m6A antibodies, the miCLIP data comprise a high background signal, which hampers the reliable identification of m6A sites from the data.\nFor accurately detecting m6A sites, we implemented an AdaBoost-based machine learning model (m6Aboost) for classifying the miCLIP2 peaks into m6A sites and background signals (Körtel et al. 2021). The model was trained on high-confidence m6A sites that were obtained by comparing wildtype and Mettl3 knockout mouse embryonic stem cells (mESC) lacking the major methyltransferase Mettl3. For classification, the m6Aboost model uses a series of features, including the experimental miCLIP2 signal (truncation events and C-to-T transitions) as well as the transcript region (5’UTR, CDS, 3’UTR) and the nucleotide sequence in a 21-nt window around the miCLIP2 peak.\nThe m6Aboost package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/m6Aboost.html."
+  },
+  {
+    "objectID": "tools_posts/bioconductor/m6Aboost/index.html#the-cliprofiler-package-extension",
+    "href": "tools_posts/bioconductor/m6Aboost/index.html#the-cliprofiler-package-extension",
+    "title": "m6Aboost",
+    "section": "",
+    "text": "{width = “400”, height = “900}\nN6-methyladenosine (m6A) is the most abundant internal modification in mRNA. It impacts many different aspects of an mRNA’s life, e.g. nuclear export, translation, stability, etc.\nm6A individual-nucleotide resolution UV crosslinking and immunoprecipitation (miCLIP) and the improved miCLIP2 are m6A antibody-based methods that allow the transcriptome-wide mapping of m6A sites at a single-nucleotide resolution (Körtel et al. 2021)(Linder et al. 2015). In brief, UV crosslinking of the m6A antibody to the modified RNA leads to truncation of reverse transcription or C-to-T transitions in the case of readthrough. However, due to the limited specificity and high cross-reactivity of the m6A antibodies, the miCLIP data comprise a high background signal, which hampers the reliable identification of m6A sites from the data.\nFor accurately detecting m6A sites, we implemented an AdaBoost-based machine learning model (m6Aboost) for classifying the miCLIP2 peaks into m6A sites and background signals (Körtel et al. 2021). The model was trained on high-confidence m6A sites that were obtained by comparing wildtype and Mettl3 knockout mouse embryonic stem cells (mESC) lacking the major methyltransferase Mettl3. For classification, the m6Aboost model uses a series of features, including the experimental miCLIP2 signal (truncation events and C-to-T transitions) as well as the transcript region (5’UTR, CDS, 3’UTR) and the nucleotide sequence in a 21-nt window around the miCLIP2 peak.\nThe m6Aboost package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/m6Aboost.html."
+  },
+  {
+    "objectID": "project_posts/disease/PURA/index.html",
+    "href": "project_posts/disease/PURA/index.html",
+    "title": "Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome.",
+    "section": "",
+    "text": "The protein PURA (purine-rich element binding protein A) is at the center of scientific investigation due to its involvement in two distinct types of neuronal diseases. In neurodegenerative RNA-repeat expansion disorders like ALS (Amyotrophic lateral sclerosis) and FTD (frontotemporal dementia), PURA has been found to bind to neuronal aggregates. On the other hand, spontaneous de novo mutations of the PURA gene lead to a neurodevelopmental disease known as PURA Syndrome. Despite its significance, our understanding of the molecular pathways affected by PURA in healthy cells and its association with these diseases remains limited.\nTo bridge this knowledge gap, we teamed up with the groups of Professor Dr. Dierk Niessing at Universität Ulm and Helmholtz Zentrum München. Our primary objective is to shed light on the cellular function of PURA in healthy cells, an endeavor we have already begun to explore in our publication titled “Depletion of the RNA-binding protein PURA triggers changes in posttranscriptional gene regulation and loss of P-bodies” (Molitor & Klostermann et al., Nucleic Acids Research).\nIn our publication, we unveil the predominant cytoplasmic localization of PURA, where it interacts with thousands of mRNAs. Remarkably, the depletion of PURA leads to changes in the abundance of numerous transcripts. Based on the proteins encoded by these transcripts, we propose that PURA plays a pivotal role in immune responses, mitochondrial function, autophagy, and processing (P)-body activity. Notably, decreased levels of PURA impact the expression of essential P-body components, LSM14A and DDX6, consequently influencing the formation and composition of this phase-separated RNA processing machinery in human cells.\nBuilding upon these findings, our next step involves expanding our understanding of the effects of PURA syndrome through the utilization of physiological cell lines and diverse disease models."
+  },
+  {
+    "objectID": "project_posts/disease/PURA/index.html#understanding-the-function-of-pura-in-healthy-organisms-and-in-the-context-of-pura-syndrome.",
+    "href": "project_posts/disease/PURA/index.html#understanding-the-function-of-pura-in-healthy-organisms-and-in-the-context-of-pura-syndrome.",
+    "title": "Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome.",
+    "section": "",
+    "text": "The protein PURA (purine-rich element binding protein A) is at the center of scientific investigation due to its involvement in two distinct types of neuronal diseases. In neurodegenerative RNA-repeat expansion disorders like ALS (Amyotrophic lateral sclerosis) and FTD (frontotemporal dementia), PURA has been found to bind to neuronal aggregates. On the other hand, spontaneous de novo mutations of the PURA gene lead to a neurodevelopmental disease known as PURA Syndrome. Despite its significance, our understanding of the molecular pathways affected by PURA in healthy cells and its association with these diseases remains limited.\nTo bridge this knowledge gap, we teamed up with the groups of Professor Dr. Dierk Niessing at Universität Ulm and Helmholtz Zentrum München. Our primary objective is to shed light on the cellular function of PURA in healthy cells, an endeavor we have already begun to explore in our publication titled “Depletion of the RNA-binding protein PURA triggers changes in posttranscriptional gene regulation and loss of P-bodies” (Molitor & Klostermann et al., Nucleic Acids Research).\nIn our publication, we unveil the predominant cytoplasmic localization of PURA, where it interacts with thousands of mRNAs. Remarkably, the depletion of PURA leads to changes in the abundance of numerous transcripts. Based on the proteins encoded by these transcripts, we propose that PURA plays a pivotal role in immune responses, mitochondrial function, autophagy, and processing (P)-body activity. Notably, decreased levels of PURA impact the expression of essential P-body components, LSM14A and DDX6, consequently influencing the formation and composition of this phase-separated RNA processing machinery in human cells.\nBuilding upon these findings, our next step involves expanding our understanding of the effects of PURA syndrome through the utilization of physiological cell lines and diverse disease models."
+  },
+  {
+    "objectID": "project_posts/disease/cafs/index.html",
+    "href": "project_posts/disease/cafs/index.html",
+    "title": "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development",
+    "section": "",
+    "text": "Cancer-associated fibroblasts (CAFs) in the tumor microenvironment contribute to all stages of tumorigenesis and are usually considered to be tumor-promoting cells. In this project we found a remarkable degree of CAF herterogenity which changed during mammary cancer development. We created whole transcriptome longitudinal data on CAF development from early- and late-stage tumors and observed a shift in fibroblast populations over time, which was negatively associated with patient survival. We then trained a random forest classification model to compute a gene signature that had predicive power in bulk tumor patient samples.\nThe full manuscript can be found at International Journal of Molecular Sciences."
+  },
+  {
+    "objectID": "project_posts/disease/cafs/index.html#the-role-of-cancer-associated-fibroblasts-in-mammary-carcinoma-development",
+    "href": "project_posts/disease/cafs/index.html#the-role-of-cancer-associated-fibroblasts-in-mammary-carcinoma-development",
+    "title": "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development",
+    "section": "",
+    "text": "Cancer-associated fibroblasts (CAFs) in the tumor microenvironment contribute to all stages of tumorigenesis and are usually considered to be tumor-promoting cells. In this project we found a remarkable degree of CAF herterogenity which changed during mammary cancer development. We created whole transcriptome longitudinal data on CAF development from early- and late-stage tumors and observed a shift in fibroblast populations over time, which was negatively associated with patient survival. We then trained a random forest classification model to compute a gene signature that had predicive power in bulk tumor patient samples.\nThe full manuscript can be found at International Journal of Molecular Sciences."
+  },
+  {
+    "objectID": "project_posts/rna_regulation/srsf6hypoxia/index.html",
+    "href": "project_posts/rna_regulation/srsf6hypoxia/index.html",
+    "title": "SRSF6 poison cassette exon splicing as hypoxia response",
+    "section": "",
+    "text": "Hypoxia induces massive changes in alternative splicing (AS) to adapt cells to the lack of oxygen. In this project SRSF6 was found to be a key factor in the AS response to hypoxia. A strong reduction in SRSF6 levels in acute hypoxia led to exon skipping and triggered nuclear speckle dispersal as a mechanism for the cell to reprogram the gene expression profile. We found this mechanism to be active in various cancer types and further propose a tumor suppressor function.\nThe full manuscript can be found at Nucleic Acids Research."
+  },
+  {
+    "objectID": "project_posts/rna_regulation/srsf6hypoxia/index.html#the-effect-of-srsf6-poison-cassette-exon-splicing-in-hypoxia",
+    "href": "project_posts/rna_regulation/srsf6hypoxia/index.html#the-effect-of-srsf6-poison-cassette-exon-splicing-in-hypoxia",
+    "title": "SRSF6 poison cassette exon splicing as hypoxia response",
+    "section": "",
+    "text": "Hypoxia induces massive changes in alternative splicing (AS) to adapt cells to the lack of oxygen. In this project SRSF6 was found to be a key factor in the AS response to hypoxia. A strong reduction in SRSF6 levels in acute hypoxia led to exon skipping and triggered nuclear speckle dispersal as a mechanism for the cell to reprogram the gene expression profile. We found this mechanism to be active in various cancer types and further propose a tumor suppressor function.\nThe full manuscript can be found at Nucleic Acids Research."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPostdoc melina.klostermann-at-uni-wuerzburg.de \n\n\n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nPhD student dominik.stroh-at-uni-wuerzburg.de \n\n\n\n\n\n\n\n\n\n\nPhD student jonas.busam-at-uni-wuerzburg.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi"
+  },
+  {
+    "objectID": "people.html#the-group",
+    "href": "people.html#the-group",
+    "title": "People",
+    "section": "",
+    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPostdoc melina.klostermann-at-uni-wuerzburg.de \n\n\n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nPhD student dominik.stroh-at-uni-wuerzburg.de \n\n\n\n\n\n\n\n\n\n\nPhD student jonas.busam-at-uni-wuerzburg.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi"
+  },
+  {
+    "objectID": "people.html#previous-members",
+    "href": "people.html#previous-members",
+    "title": "People",
+    "section": "Previous members",
+    "text": "Previous members\n\n\n\n\n\n\n\nClara Hernandez Canas\n\n\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\nMario Keller"
+  },
+  {
+    "objectID": "people.html#impressions",
+    "href": "people.html#impressions",
+    "title": "People",
+    "section": "Impressions",
+    "text": "Impressions"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Zarnack Group",
+    "section": "",
+    "text": "Computational RNA Biology\nRNA-binding proteins (RBPs) are critical players in the posttranscriptional control of gene expression. Their functional impact ranges from the alternative splicing and polyadenylation of pre-mRNAs in the nucleus to the subcellular localisation and translation of mRNAs in the cytoplasm. Numerous diseases are characterised by dysregulated RBPs and massively altered transcriptome patterns, particularly prominent in neurodegeneration and cancer. In the era of functional genomics and high-throughput sequencing, we are now able to address these processes at an unprecedented resolution and scale.\n\nFunding"
   },
   {
     "objectID": "tools.html",
     "href": "tools.html",
+    "title": "Tools",
+    "section": "",
+    "text": "We provide a complete workflow for the processing of CLIP data and the tool racoon_clip, which automatises this workflow.\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tools.html#clip-data-processing",
+    "href": "tools.html#clip-data-processing",
     "title": "Tools",
     "section": "",
     "text": "We provide a complete workflow for the processing of CLIP data and the tool racoon_clip, which automatises this workflow.\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
@@ -28,8 +147,29 @@
     "text": "circRNAs\nWe provide a commandline application for the detection of circular RNAs.\n\n\n\n\n\n\n\n\n\n\nCalcifer: A workflow for circRNA detection and analysis\n\n\nCalcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Spezialisierunspraktikum: RNA Bioinformatik",
+    "section": "",
+    "text": "Spezialisierunspraktikum: RNA Bioinformatik\nSpezialisierung I & II Modul 19H & 20E at FB 15 of Goethe Universität Frankfurt.\n\n\nEMBO Practial Course: iCLIP2: An advanced techinque for protein-RNA interaction mapping\n\n\n\n\n\nSee also https://meetings.embo.org/event/24-iclip2."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Phone +49 (0)69 798-42506\nFax +49 (0)69 798-763-42506\nkathi.zarnack(at)bmls.de\n\nVisiting Address:\nBMLS Buchmann Institute for Molecular Life Sciences\nGoethe University Frankfurt\nMax von Laue Str. 15, Room 3.655\n60438 Frankfurt/Main\nGermany"
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html#learning-the-molecular-code-of-rna-regulation",
+    "href": "projects.html#learning-the-molecular-code-of-rna-regulation",
     "title": "Projects",
     "section": "",
     "text": "RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
@@ -49,25 +189,11 @@
     "text": "DNA stability\nEach use of the DNA template poses a risk to its integrity, leading in the worst case to a complete breakage, known as a DNA double-strand break (DSB). Despite sophisticated repair pathways in the DNA damage response that capture most of these, unrepaired DSBs pose a major threat to genomic integrity and, in the worst cases, can lead to serious diseases such as cancer. Although most DSBs are induced by exogenous agents such as ionising radiation or chemotherapeutic agents, the impact of endogenous cellular mechanisms should not be underestimated. RNA transcription, DNA replication, the 3D organisation of the genome and their interplay are known to be key factors in determining where and when DSB hotspots occur. However, a holistic view of the endogenous totality of DNA double-strand breaks, the breakome, in human cells has not yet been achieved.\n\n\n\n\n\n\n\n\n\n\nEndogenous DNA fragility\n\n\nWe investigate sources and consequences of intrinsic genomic instability across human cell types.\n\n\n\nSFB-1361\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Zarnack Group",
-    "section": "",
-    "text": "Computational RNA Biology\nRNA-binding proteins (RBPs) are critical players in the posttranscriptional control of gene expression. Their functional impact ranges from the alternative splicing and polyadenylation of pre-mRNAs in the nucleus to the subcellular localisation and translation of mRNAs in the cytoplasm. Numerous diseases are characterised by dysregulated RBPs and massively altered transcriptome patterns, particularly prominent in neurodegeneration and cancer. In the era of functional genomics and high-throughput sequencing, we are now able to address these processes at an unprecedented resolution and scale.\n\nFunding"
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "The Zarnack Group",
     "section": "",
     "text": "Martin Lewinsk*, Mirko Brüggemann*, Tino Köster*, Marlene Reichel, Thorsten Bergelt, Katja Meyer, Julian König, Kathi Zarnack, Dorothee Staiger\nMapping protein-RNA binding in plants with individual-nucleotide-resolution UV cross-linking and immunoprecipitation (plant iCLIP2)\nNature protocols, 26 Jan 2024, doi:10.1038/s41596-023-00935-3\nMartin Lewinski*, Alexander Steffen*, Nitin Kachariya*, Mareike Elgner, Christoph Schmal, Niki Messini, Tino Köster, Marlene Reichel, Michael Sattler, Kathi Zarnack, Dorothee Staiger\nArabidopsis thaliana GLYCINE RICH RNA-BINDING PROTEIN 7 interaction with its iCLIP target LHCB1.1 correlates with changes in RNA stability and circadian oscillation\nThe Plant journal : for cell and molecular biology, 21 Dec 2023, doi:10.1111/tpj.16601\nBenjamin Arnold*, Ricarda J Riegger*, Ellen Kazumi Okuda, Irena Slišković, Mario Keller, Cem Bakisoglu, François McNicoll, Kathi Zarnack, Michaela Müller-McNicoll\nhGRAD: A versatile “one-fits-all” system to acutely deplete RNA binding proteins from condensates\nThe Journal of cell biology, 18 Dec 2023, doi:10.1083/jcb.202304030\nKathi Zarnack, Eduardo Eyras\n‘Artificial intelligence and machine learning in RNA biology’\nBriefings in bioinformatics, 15 Nov 2023, doi:10.1093/bib/bbad415\nSandra Fischer, Chiara Lichtenthaeler, Anastasiya Stepanenko, Florian Heyl, Daniel Maticzka, Katrin Kemmerer, Melina Klostermann, Rolf Backofen, Kathi Zarnack, Julia E Weigand\nHeterogenous nuclear ribonucleoprotein D-like controls endothelial cell functions\nBiological chemistry, 09 Nov 2023, doi:10.1515/hsz-2023-0254\nSrimeenakshi Sankaranarayanan, Carl Haag, Patrick Petzsch, Karl Köhrer, Anna Matuszyńska, Kathi Zarnack, Michael Feldbrügge\nThe mRNA stability factor Khd4 defines a specific mRNA regulon for membrane trafficking in the pathogen Ustilago maydis\nProceedings of the National Academy of Sciences of the United States of America, 17 Aug 2023, doi:10.1073/pnas.2301731120\nStefanie Ebersberger, Clara Hipp, Miriam M Mulorz, Andreas Buchbender, Dalmira Hubrich, Hyun-Seo Kang, Santiago Martínez-Lumbreras, Panajot Kristofori, F X Reymond Sutandy, Lidia Llacsahuanga Allcca, Jonas Schönfeld, Cem Bakisoglu, Anke Busch, Heike Hänel, Kerstin Tretow, Mareen Welzel, Antonella Di Liddo, Martin M Möckel, Kathi Zarnack, Ingo Ebersberger, Stefan Legewie, Katja Luck, Michael Sattler, Julian König\nFUBP1 is a general splicing factor facilitating 3’ splice site recognition and splicing of long introns\nMolecular cell, 28 Jul 2023, doi:10.1016/j.molcel.2023.07.002\nSimone Franziska Glaser, Andre Brezski, Nina Baumgarten, Marius Klangwart, Andreas W Heumüller, Ranjan Kumar Maji, Matthias S Leisegang, Stefan Guenther, Christoph M Zehendner, David John, Marcel H Schulz, Kathi Zarnack, Stefanie Dimmeler\nCircular RNA circPLOD2 regulates pericyte function by targeting the transcription factor KLF4\nCell reports, 23 Jul 2023, doi:10.1016/j.celrep.2023.112824\nCornelia Rücklé, Nadine Körtel, M Felicia Basilicata, Anke Busch, You Zhou, Peter Hoch-Kraft, Kerstin Tretow, Fridolin Kielisch, Marco Bertin, Mihika Pradhan, Michael Musheev, Susann Schweiger, Christof Niehrs, Oliver Rausch, Kathi Zarnack, Claudia Isabelle Keller Valsecchi, Julian König\nAuthor Correction: RNA stability controlled by m6A methylation contributes to X-to-autosome dosage compensation in mammals\nNature structural & molecular biology, 06 Jul 2023, doi:10.1038/s41594-023-01053-0\nRebekka Bauer, Sofie Patrizia Meyer, Rebecca Raue, Megan A Palmer, Vanesa Maria Guerrero Ruiz, Giulia Cardamone, Silvia Rösser, Milou Heffels, Fabian Roesmann, Alexander Wilhelm, Dieter Lütjohann, Kathi Zarnack, Dominik Christian Fuhrmann, Marek Widera, Tobias Schmid, Bernhard Brüne\nHypoxia-altered cholesterol homeostasis enhances the expression of interferon-stimulated genes upon SARS-CoV-2 infections in monocytes\nFrontiers in immunology, 28 Jun 2023, doi:10.3389/fimmu.2023.1121864\nCornelia Rücklé*, Nadine Körtel*, M Felicia Basilicata, Anke Busch, You Zhou, Peter Hoch-Kraft, Kerstin Tretow, Fridolin Kielisch, Marco Bertin, Mihika Pradhan, Michael Musheev, Susann Schweiger, Christof Niehrs, Oliver Rausch, Kathi Zarnack, Claudia Isabelle Keller Valsecchi, Julian König\nRNA stability controlled by m6A methylation contributes to X-to-autosome dosage compensation in mammals\nNature structural & molecular biology, 18 May 2023, doi:10.1038/s41594-023-00997-7\nPablo Acera Mateos*, You Zhou*, Kathi Zarnack, Eduardo Eyras\nConcepts and methods for transcriptome-wide prediction of chemical messenger RNA modifications with machine learning\nBriefings in bioinformatics, 04 May 2023, doi:10.1093/bib/bbad163\nLena Molitor*, Melina Klostermann*, Sabrina Bacher, Juliane Merl-Pham, Nadine Spranger, Sandra Burczyk, Carolin Ketteler, Ejona Rusha, Daniel Tews, Anna Pertek, Marcel Proske, Anke Busch, Sarah Reschke, Regina Feederle, Stefanie M Hauck, Helmut Blum, Micha Drukker, Pamela Fischer-Posovszky, Julian König, Kathi Zarnack, Dierk Niessing\nDepletion of the RNA-binding protein PURA triggers changes in posttranscriptional gene regulation and loss of P-bodies\nNucleic acids research, 18 Jan 2023, doi:10.1093/nar/gkac1237\nCamila de Oliveira Freitas Machado, Michal Schafranek, Mirko Brüggemann, María Clara Hernández Cañás, Mario Keller, Antonella Di Liddo, Andre Brezski, Nicole Blümel, Benjamin Arnold, Anja Bremm, Ilka Wittig, Nicolas Jaé, François McNicoll, Stefanie Dimmeler, Kathi Zarnack, Michaela Müller-McNicoll\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\nNucleic acids research, 09 Jan 2023, doi:10.1093/nar/gkac1225\nPhilipp Keil*, Alexander Wulf*, Nitin Kachariya*, Samira Reuscher, Kristin Hühn, Ivan Silbern, Janine Altmüller, Mario Keller, Ralf Stehle, Kathi Zarnack, Michael Sattler, Henning Urlaub, Katja Sträßer\nNpl3 functions in mRNP assembly by recruitment of mRNP components to the transcription site and their transfer onto the mRNA\nNucleic acids research, 30 Dec 2022, doi:10.1093/nar/gkac1206\nMariela Cortés-López, Laura Schulz, Mihaela Enculescu, Claudia Paret, Bea Spiekermann, Mathieu Quesnel-Vallières, Manuel Torres-Diz, Sebastian Unic, Anke Busch, Anna Orekhova, Monika Kuban, Mikhail Mesitov, Miriam M Mulorz, Rawan Shraim, Fridolin Kielisch, Jörg Faber, Yoseph Barash, Andrei Thomas-Tikhonenko, Kathi Zarnack, Stefan Legewie, Julian König\nHigh-throughput mutagenesis identifies mutations and RNA-binding proteins controlling CD19 splicing and CART-19 therapy resistance\nNature communications, 22 Sep 2022, doi:10.1038/s41467-022-31818-y\nAlisha N Jones, Carina Graß, Isabel Meininger, Arie Geerlof, Melina Klostermann, Kathi Zarnack, Daniel Krappmann, Michael Sattler\nModulation of pre-mRNA structure by hnRNP proteins regulates alternative splicing of MALT1\nScience advances, 03 Aug 2022, doi:10.1126/sciadv.abp9153\nRebekka Bauer, Sofie Patrizia Meyer, Karolina Anna Kloss, Vanesa Maria Guerrero Ruiz, Samira Reuscher, You Zhou, Dominik Christian Fuhrmann, Kathi Zarnack, Tobias Schmid, Bernhard Brüne\nFunctional RNA Dynamics Are Progressively Governed by RNA Destabilization during the Adaptation to Chronic Hypoxia\nInternational journal of molecular sciences, 28 May 2022, doi:10.3390/ijms23105824\nEiman Elwakeel, Mirko Brüggemann, Jessica Wagih, Olga Lityagina, Mohammed A F Elewa, Yingying Han, Timo Frömel, Rüdiger Popp, Adele M Nicolas, Yannick Schreiber, Elise Gradhand, Dominique Thomas, Rolf Nüsing, Julia Steinmetz-Späh, Rajkumar Savai, Emmanouil Fokas, Ingrid Fleming, Florian R Greten, Kathi Zarnack, Bernhard Brüne, Andreas Weigert\nDisruption of Prostaglandin E2 Signaling in Cancer-Associated Fibroblasts Limits Mammary Carcinoma Growth but Promotes Metastasis\nCancer research, 02 Feb 2022, doi:10.1158/0008-5472.CAN-21-2116\nIna Koch, Miguel Andrade-Navarro, Marcel H Schulz, Kathi Zarnack\nBioinformatics in theory and application - highlights of the 36th German Conference on Bioinformatics\nBiological chemistry, 30 Jun 2021, doi:10.1515/hsz-2021-0298\nLaura Schulz*, Manuel Torres-Diz*, Mariela Cortés-López*, Katharina E Hayer*, Mukta Asnani, Sarah K Tasian, Yoseph Barash, Elena Sotillo, Kathi Zarnack, Julian König, Andrei Thomas-Tikhonenko\nDirect long-read RNA sequencing identifies a subset of questionable exitrons likely arising from reverse transcription artifacts\nGenome biology, 29 Jun 2021, doi:10.1186/s13059-021-02411-1\nSebastian de Vries, Vladimir Benes, Isabel S Naarmann-de Vries, Cornelia Rücklé, Katharina Zarnack, Gernot Marx, Dirk H Ostareck, Antje Ostareck-Lederer\nP23 Acts as Functional RBP in the Macrophage Inflammation Response\nFrontiers in molecular biosciences, 28 Jun 2021, doi:10.3389/fmolb.2021.625608\nNadine Körtel*, Cornelia Rücklé*, You Zhou*, Anke Busch, Peter Hoch-Kraft, F X Reymond Sutandy, Jacob Haase, Mihika Pradhan, Michael Musheev, Dirk Ostareck, Antje Ostareck-Lederer, Christoph Dieterich, Stefan Hüttelmaier, Christof Niehrs, Oliver Rausch, Dan Dominissini, Julian König, Kathi Zarnack\nDeep and accurate detection of m6A RNA modifications using miCLIP2 and m6Aboost machine learning\nNucleic acids research, 22 Jun 2021, doi:10.1093/nar/gkab485\nOliver Daniel Schwich*, Nicole Blümel*, Mario Keller*, Marius Wegener, Samarth Thonta Setty, Melinda Elaine Brunstein, Ina Poser, Igor Ruiz De Los Mozos, Beatrix Suess, Christian Münch, François McNicoll, Kathi Zarnack, Michaela Müller-McNicoll\nSRSF3 and SRSF7 modulate 3’UTR length through suppression or activation of proximal polyadenylation sites and regulation of CFIm levels\nGenome biology, 12 Mar 2021, doi:10.1186/s13059-021-02298-y\nMaria Inês Alvelos, Mirko Brüggemann, Fx Reymond Sutandy, Jonàs Juan-Mateu, Maikel Luis Colli, Anke Busch, Miguel Lopes, Ângela Castela, Annemieke Aartsma-Rus, Julian König, Kathi Zarnack, Décio L Eizirik\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\nLife science alliance, 30 Dec 2020, doi:10.26508/lsa.202000825\nKathi Zarnack, Sureshkumar Balasubramanian, Michael P Gantier, Vladislav Kunetsky, Michael Kracht, M Lienhard Schmitz, Katja Sträßer\nDynamic mRNP Remodeling in Response to Internal and External Stimuli\nBiomolecules, 16 Sep 2020, doi:10.3390/biom10091310\nMihaela Enculescu, Simon Braun, Samarth Thonta Setty, Anke Busch, Kathi Zarnack, Julian König, Stefan Legewie\nExon Definition Facilitates Reliable Control of Alternative Splicing in the RON Proto-Oncogene\nBiophysical journal, 28 Apr 2020, doi:10.1016/j.bpj.2020.02.022\nJulian König, Kathi Zarnack\nHigh-throughput approaches in RNA biology\nMethods (San Diego, Calif.), 12 Apr 2020, doi:10.1016/j.ymeth.2020.04.002\nHyun-Seo Kang, Carolina Sánchez-Rico, Stefanie Ebersberger, F X Reymond Sutandy, Anke Busch, Thomas Welte, Ralf Stehle, Clara Hipp, Laura Schulz, Andreas Buchbender, Kathi Zarnack, Julian König, Michael Sattler\nAn autoinhibitory intramolecular interaction proof-reads RNA recognition by the essential splicing factor U2AF2\nProceedings of the National Academy of Sciences of the United States of America, 20 Mar 2020, doi:10.1073/pnas.1913483117\nSandra Fischer, Antonella Di Liddo, Katarzyna Taylor, Jamina S Gerhardus, Krzysztof Sobczak, Kathi Zarnack, Julia E Weigand\nMuscleblind-like 2 controls the hypoxia response of cancer cells\nRNA (New York, N.Y.), 05 Mar 2020, doi:10.1261/rna.073353.119\nElisa Monzón-Casanova, Louise S Matheson, Kristina Tabbada, Kathi Zarnack, Christopher Wj Smith, Martin Turner\nPolypyrimidine tract-binding proteins are essential for B cell development\neLife, 22 Feb 2020, doi:10.7554/eLife.53557\nAnnabelle Dold*, Hong Han*, Niankun Liu*, Andrea Hildebrandt, Mirko Brüggemann, Cornelia Rücklé, Heike Hänel, Anke Busch, Petra Beli, Kathi Zarnack, Julian König, Jean-Yves Roignant, Paul Lasko\nMakorin 1 controls embryonic patterning by alleviating Bruno1-mediated repression of oskar translation\nPLoS genetics, 25 Jan 2020, doi:10.1371/journal.pgen.1008581\nAnke Busch, Mirko Brüggemann, Stefanie Ebersberger, Kathi Zarnack\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\nMethods (San Diego, Calif.), 22 Nov 2019, doi:10.1016/j.ymeth.2019.11.008\nAndrea Hildebrandt, Mirko Brüggemann, Cornelia Rücklé, Susan Boerner, Jan B Heidelberger, Anke Busch, Heike Hänel, Andrea Voigt, Martin M Möckel, Stefanie Ebersberger, Anica Scholz, Annabelle Dold, Tobias Schmid, Ingo Ebersberger, Jean-Yves Roignant, Kathi Zarnack, Julian König, Petra Beli\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\nGenome biology, 24 Oct 2019, doi:10.1186/s13059-019-1814-0\nAntonella Di Liddo, Camila de Oliveira Freitas Machado, Sandra Fischer, Stefanie Ebersberger, Andreas W Heumüller, Julia E Weigand, Michaela Müller-McNicoll, Kathi Zarnack\nA combined computational pipeline to detect circular RNAs in human cancer cells under hypoxic stress\nJournal of molecular cell biology, 28 Sep 2019, doi:10.1093/jmcb/mjz094\nAnica Scholz, Florian Eggenhofer, Rick Gelhausen, Björn Grüning, Kathi Zarnack, Bernhard Brüne, Rolf Backofen, Tobias Schmid\nuORF-Tools-Workflow for the determination of translation-regulatory upstream open reading frames\nPloS one, 13 Sep 2019, doi:10.1371/journal.pone.0222459\nEiman Elwakeel, Mirko Brüggemann, Annika F Fink, Marcel H Schulz, Tobias Schmid, Rajkumar Savai, Bernhard Brüne, Kathi Zarnack, Andreas Weigert\nPhenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development\nInternational journal of molecular sciences, 12 Sep 2019, doi:10.3390/ijms20184438\nLilli Olgeiser, Carl Haag, Susan Boerner, Jernej Ule, Anke Busch, Janine Koepke, Julian König, Michael Feldbrügge, Kathi Zarnack\nThe key protein of endosomal mRNP transport Rrm4 binds translational landmark sites of cargo mRNAs\nEMBO reports, 16 Dec 2018, doi:10.15252/embr.201846588\nJulien Béthune, Ralf-Peter Jansen, Michael Feldbrügge, Kathi Zarnack\nMembrane-Associated RNA-Binding Proteins Orchestrate Organelle-Coupled Translation\nTrends in cell biology, 21 Nov 2018, doi:10.1016/j.tcb.2018.10.005\nSimon Braun, Mihaela Enculescu, Samarth T Setty, Mariela Cortés-López, Bernardo P de Almeida, F X Reymond Sutandy, Laura Schulz, Anke Busch, Markus Seiler, Stefanie Ebersberger, Nuno L Barbosa-Morais, Stefan Legewie, Julian König, Kathi Zarnack\nDecoding a cancer-relevant splicing decision in the RON proto-oncogene using high-throughput mutagenesis\nNature communications, 19 Aug 2018, doi:10.1038/s41467-018-05748-7\nKathi Zarnack, Michaela Müller-McNicoll\nHigh-Throughput Screens for cis-Acting RNA Sequence Elements That Promote Nuclear Retention\nBiochemistry, 25 May 2018, doi:10.1021/acs.biochem.8b00479\nF X Reymond Sutandy, Stefanie Ebersberger, Lu Huang, Anke Busch, Maximilian Bach, Hyun-Seo Kang, Jörg Fallmann, Daniel Maticzka, Rolf Backofen, Peter F Stadler, Kathi Zarnack, Michael Sattler, Stefan Legewie, Julian König\nIn vitro iCLIP-based modeling uncovers how the splicing factor U2AF2 relies on regulation by cofactors\nGenome research, 13 Apr 2018, doi:10.1101/gr.229757.117\nAndrea Hildebrandt, Gregorio Alanis-Lobato, Andrea Voigt, Kathi Zarnack, Miguel A Andrade-Navarro, Petra Beli, Julian König\nInteraction profiling of RNA-binding ubiquitin ligases reveals a link between posttranscriptional regulation and the ubiquitin system\nScientific reports, 30 Nov 2017, doi:10.1038/s41598-017-16695-6\nNejc Haberman, Ina Huppertz, Jan Attig, Julian König, Zhen Wang, Christian Hauer, Matthias W Hentze, Andreas E Kulozik, Hervé Le Hir, Tomaž Curk, Christopher R Sibley, Kathi Zarnack, Jernej Ule\nErratum to: Insights into the design and interpretation of iCLIP experiments\nGenome biology, 17 Aug 2017, doi:10.1186/s13059-017-1294-z\nValentina Botti, François McNicoll, Michaela C Steiner, Florian M Richter, Anfisa Solovyeva, Marius Wegener, Oliver D Schwich, Ina Poser, Kathi Zarnack, Ilka Wittig, Karla M Neugebauer, Michaela Müller-McNicoll\nCellular differentiation state modulates the mRNA export activity of SR proteins\nThe Journal of cell biology, 09 Jun 2017, doi:10.1083/jcb.201610051\nSameer Dixit, Michaela Müller-McNicoll, Vojtěch David, Kathi Zarnack, Jernej Ule, Hassan Hashimi, Julius Lukeš\nDifferential Binding of Mitochondrial Transcripts by MRB8170 and MRB4160 Regulates Distinct Editing Fates of Mitochondrial mRNA in Trypanosomes\nmBio, 02 Feb 2017, doi:10.1128/mBio.02288-16\nNejc Haberman, Ina Huppertz, Jan Attig, Julian König, Zhen Wang, Christian Hauer, Matthias W Hentze, Andreas E Kulozik, Hervé Le Hir, Tomaž Curk, Christopher R Sibley, Kathi Zarnack, Jernej Ule\nInsights into the design and interpretation of iCLIP experiments\nGenome biology, 18 Jan 2017, doi:10.1186/s13059-016-1130-x\nJan Attig, Igor Ruiz de Los Mozos, Nejc Haberman, Zhen Wang, Warren Emmett, Kathi Zarnack, Julian König, Jernej Ule\nSplicing repression allows the gradual emergence of new Alu-exons in primate evolution\neLife, 19 Nov 2016, doi:10.7554/eLife.19545\nMichaela Müller-McNicoll, Valentina Botti, Antonio M de Jesus Domingues, Holger Brandl, Oliver D Schwich, Michaela C Steiner, Tomaz Curk, Ina Poser, Kathi Zarnack, Karla M Neugebauer\nSR proteins are NXF1 adaptors that link alternative RNA processing to mRNA export\nGenes & development, 06 Mar 2016, doi:10.1101/gad.276477.115\nJernej Murn, Marianna Teplova, Kathi Zarnack, Yang Shi, Dinshaw J Patel\nRecognition of distinct RNA motifs by the clustered CCCH zinc fingers of neuronal protein Unkempt\nNature structural & molecular biology, 08 Dec 2015, doi:10.1038/nsmb.3140\nMojca Tajnik, Alessandra Vigilante, Simon Braun, Heike Hänel, Nicholas M Luscombe, Jernej Ule, Kathi Zarnack, Julian König\nIntergenic Alu exonisation facilitates the evolution of tissue-specific transcript ends\nNucleic acids research, 25 Sep 2015, doi:10.1093/nar/gkv956\nJernej Murn, Kathi Zarnack, Yawei J Yang, Omer Durak, Elisabeth A Murphy, Sihem Cheloufi, Dilenny M Gonzalez, Marianna Teplova, Tomaž Curk, Johannes Zuber, Dinshaw J Patel, Jernej Ule, Nicholas M Luscombe, Li-Huei Tsai, Christopher A Walsh, Yang Shi\nControl of a neuronal morphology program by an RNA-binding zinc finger protein, Unkempt\nGenes & development, 05 Mar 2015, doi:10.1101/gad.258483.115\nManuel D Diaz-Muñoz, Sarah E Bell, Kirsten Fairfax, Elisa Monzon-Casanova, Adam F Cunningham, Mar Gonzalez-Porta, Simon R Andrews, Victoria I Bunik, Kathi Zarnack, Tomaž Curk, Ward A Heggermont, Stephane Heymans, Gary E Gibson, Dimitris L Kontoyiannis, Jernej Ule, Martin Turner\nThe RNA-binding protein HuR is essential for the B cell antibody response\nNature immunology, 24 Feb 2015, doi:10.1038/ni.3115\nKathi Zarnack, Julian König, Mojca Tajnik, Iñigo Martincorena, Sebastian Eustermann, Isabelle Stévant, Alejandro Reyes, Simon Anders, Nicholas M Luscombe, Jernej Ule\nDirect competition between hnRNP C and U2AF65 protects the transcriptome from the exonization of Alu elements\nCell, 05 Feb 2013, doi:10.1016/j.cell.2012.12.023\nJulian König, Kathi Zarnack, Nicholas M Luscombe, Jernej Ule\nProtein-RNA interactions: new genomic technologies and perspectives\nNature reviews. Genetics, 19 Jan 2012, doi:10.1038/nrg3141\nJames R Tollervey, Zhen Wang, Tibor Hortobágyi, Joshua T Witten, Kathi Zarnack, Melis Kayikci, Tyson A Clark, Anthony C Schweitzer, Gregor Rot, Tomaž Curk, Blaž Zupan, Boris Rogelj, Christopher E Shaw, Jernej Ule\nAnalysis of alternative splicing associated with aging and neurodegeneration in the human brain\nGenome research, 18 Aug 2011, doi:10.1101/gr.122226.111\nJanine Koepke, Florian Kaffarnik, Carl Haag, Kathi Zarnack, Nicholas M Luscombe, Julian König, Jernej Ule, Ronny Kellner, Dominik Begerow, Michael Feldbrügge\nThe RNA-binding protein Rrm4 is essential for efficient secretion of endochitinase Cts1\nMolecular & cellular proteomics : MCP, 03 Aug 2011, doi:10.1074/mcp.M111.011213\nJulian Konig, Kathi Zarnack, Gregor Rot, Tomaz Curk, Melis Kayikci, Blaz Zupan, Daniel J Turner, Nicholas M Luscombe, Jernej Ule\niCLIP–transcriptome-wide mapping of protein-RNA interactions with individual nucleotide resolution\nJournal of visualized experiments : JoVE, 12 May 2011, doi:10.3791/2638\nZhen Wang, Melis Kayikci, Michael Briese, Kathi Zarnack, Nicholas M Luscombe, Gregor Rot, Blaž Zupan, Tomaž Curk, Jernej Ule\niCLIP predicts the dual splicing effects of TIA-RNA interactions\nPLoS biology, 05 Nov 2010, doi:10.1371/journal.pbio.1000530\nJulian König, Kathi Zarnack, Gregor Rot, Tomaz Curk, Melis Kayikci, Blaz Zupan, Daniel J Turner, Nicholas M Luscombe, Jernej Ule\niCLIP reveals the function of hnRNP particles in splicing at individual nucleotide resolution\nNature structural & molecular biology, 06 Jul 2010, doi:10.1038/nsmb.1838\nKathi Zarnack, Michael Feldbrügge\nMicrotubule-dependent mRNA transport in fungi\nEukaryotic cell, 18 May 2010, doi:10.1128/EC.00030-10\nEvelyn Vollmeister, Carl Haag, Kathi Zarnack, Sebastian Baumann, Julian König, Gertrud Mannhaupt, Michael Feldbrügge\nTandem KH domains of Khd4 recognize AUACCC and are essential for regulation of morphology as well as pathogenicity in Ustilago maydis\nRNA (New York, N.Y.), 27 Oct 2009, doi:10.1261/rna.1817609\nJulian König, Sebastian Baumann, Janine Koepke, Thomas Pohlmann, Kathi Zarnack, Michael Feldbrügge\nThe fungal RNA-binding protein Rrm4 mediates long-distance transport of ubi1 and rho3 mRNAs\nThe EMBO journal, 05 Jun 2009, doi:10.1038/emboj.2009.145\nKathi Zarnack, Heiko Eichhorn, Regine Kahmann, Michael Feldbrügge\nPheromone-regulated target genes respond differentially to MAPK phosphorylation of transcription factor Prf1\nMolecular microbiology, 17 Jul 2008, doi:10.1111/j.1365-2958.2008.06345.x\nMichael Feldbrügge, Kathi Zarnack, Evelyn Vollmeister, Sebastian Baumann, Janine Koepke, Julian König, Martin Münsterkötter, Gertrud Mannhaupt\nThe posttranscriptional machinery of Ustilago maydis\nFungal genetics and biology : FG & B, 13 May 2008, doi:10.1016/j.fgb.2008.03.013\nKathi Zarnack, Michael Feldbrügge\nmRNA trafficking in fungi\nMolecular genetics and genomics : MGG, 05 Sep 2007, doi:10.1007/s00438-007-0271-8\nKathi Zarnack, Sebastian Maurer, Florian Kaffarnik, Oliver Ladendorf, Andreas Brachmann, Jörg Kämper, Michael Feldbrügge\nTetracycline-regulated gene expression in the pathogen Ustilago maydis\nFungal genetics and biology : FG & B, 18 Jul 2006, doi:10.1016/j.fgb.2006.05.006"
-  },
-  {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
-    "section": "",
-    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi"
   },
   {
     "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html",
@@ -77,11 +203,11 @@
     "text": "In pancreatic β-cells SRSF6 down-regulation promotes β-cell demise through splicing dysregulation of central genes for β-cells function and survival. In this project we characterized the SRSF6 binding landscape in human pancreatic β-cells and identified a purine-rich SRSF6 consensus motif. We also observed, that the positioning of SRSF6 determined the splicing fate by either promoting exon skipping or exon inclusion. Our results also show that such splicing changes can be modulated by the use of antisense oligonucleotides.\nThe full manuscript can be found at Life Science Alliance."
   },
   {
-    "objectID": "project_posts/rna_regulation/srsf6hypoxia/index.html",
-    "href": "project_posts/rna_regulation/srsf6hypoxia/index.html",
-    "title": "SRSF6 poison cassette exon splicing as hypoxia response",
+    "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html#the-rna-binding-protein-srsf6-in-human-pancreatic-β-cells",
+    "href": "project_posts/rna_regulation/srsf6diabetes/index.html#the-rna-binding-protein-srsf6-in-human-pancreatic-β-cells",
+    "title": "SRSF6 positioning determines the splicing fate in human pancreatic β-cells",
     "section": "",
-    "text": "Hypoxia induces massive changes in alternative splicing (AS) to adapt cells to the lack of oxygen. In this project SRSF6 was found to be a key factor in the AS response to hypoxia. A strong reduction in SRSF6 levels in acute hypoxia led to exon skipping and triggered nuclear speckle dispersal as a mechanism for the cell to reprogram the gene expression profile. We found this mechanism to be active in various cancer types and further propose a tumor suppressor function.\nThe full manuscript can be found at Nucleic Acids Research."
+    "text": "In pancreatic β-cells SRSF6 down-regulation promotes β-cell demise through splicing dysregulation of central genes for β-cells function and survival. In this project we characterized the SRSF6 binding landscape in human pancreatic β-cells and identified a purine-rich SRSF6 consensus motif. We also observed, that the positioning of SRSF6 determined the splicing fate by either promoting exon skipping or exon inclusion. Our results also show that such splicing changes can be modulated by the use of antisense oligonucleotides.\nThe full manuscript can be found at Life Science Alliance."
   },
   {
     "objectID": "project_posts/rna_regulation/mkrn/index.html",
@@ -91,11 +217,11 @@
     "text": "Translating ribosomes that encounter poly(A) sequences are terminally stalled, as quality control mechanism, followed by ribosome recycling and decay of the truncated nascent polypeptide via ribosome-associated quality control. In this project we demonstrated that the conserved RNA-binding E3 ubiquitin ligase Makorin Ring Finger Protein 1 (MKRN1) promotes ribosome stalling at poly(A) sequences during ribosome-associated quality control. We observed a direct interaction with the cytoplasmic poly(A)-binding protein (PABPC1) as well as precice position upstream of poly(A) tails in the mRNA.Thus we propose that MKRN1 mediates the recognition of poly(A) tails to prevent the production of erroneous proteins from prematurely polyadenylated transcripts, thereby maintaining proteome integrity.\nThe full manuscript can be found at Genome Biology."
   },
   {
-    "objectID": "project_posts/disease/cafs/index.html",
-    "href": "project_posts/disease/cafs/index.html",
-    "title": "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development",
+    "objectID": "project_posts/rna_regulation/mkrn/index.html#the-role-of-mkrn1-in-maintaining-proteome-integrity",
+    "href": "project_posts/rna_regulation/mkrn/index.html#the-role-of-mkrn1-in-maintaining-proteome-integrity",
+    "title": "Ribosome-associated quality control by MKRN1",
     "section": "",
-    "text": "Cancer-associated fibroblasts (CAFs) in the tumor microenvironment contribute to all stages of tumorigenesis and are usually considered to be tumor-promoting cells. In this project we found a remarkable degree of CAF herterogenity which changed during mammary cancer development. We created whole transcriptome longitudinal data on CAF development from early- and late-stage tumors and observed a shift in fibroblast populations over time, which was negatively associated with patient survival. We then trained a random forest classification model to compute a gene signature that had predicive power in bulk tumor patient samples.\nThe full manuscript can be found at International Journal of Molecular Sciences."
+    "text": "Translating ribosomes that encounter poly(A) sequences are terminally stalled, as quality control mechanism, followed by ribosome recycling and decay of the truncated nascent polypeptide via ribosome-associated quality control. In this project we demonstrated that the conserved RNA-binding E3 ubiquitin ligase Makorin Ring Finger Protein 1 (MKRN1) promotes ribosome stalling at poly(A) sequences during ribosome-associated quality control. We observed a direct interaction with the cytoplasmic poly(A)-binding protein (PABPC1) as well as precice position upstream of poly(A) tails in the mRNA.Thus we propose that MKRN1 mediates the recognition of poly(A) tails to prevent the production of erroneous proteins from prematurely polyadenylated transcripts, thereby maintaining proteome integrity.\nThe full manuscript can be found at Genome Biology."
   },
   {
     "objectID": "project_posts/disease/pge2signaling/index.html",
@@ -105,15 +231,22 @@
     "text": "The activation and differentiation of cancer-associated fibroblasts (CAF) are involved in tumor progression. Here, we showed that the tumor-promoting lipid mediator prostaglandin E2 (PGE2) plays a paradoxical role in CAF activation and tumor progression. The inflammatory lipid prostaglandin E2 suppresses cancer-associated fibroblast expansion and activation limited primary mammary tumor growth while promoting metastasis. These data characterized in this project suggests a new pathway of regulating inflammatory CAF activation, which affects breast cancer progression.\nThe full manuscript can be found at Cancer Research."
   },
   {
-    "objectID": "project_posts/disease/PURA/index.html",
-    "href": "project_posts/disease/PURA/index.html",
-    "title": "Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome.",
+    "objectID": "project_posts/disease/pge2signaling/index.html#the-effect-of-prostaglandin-e2-signaling-disruption-in-cancer-associated-fibroblasts",
+    "href": "project_posts/disease/pge2signaling/index.html#the-effect-of-prostaglandin-e2-signaling-disruption-in-cancer-associated-fibroblasts",
+    "title": "Prostaglandin E2 Signaling in Cancer-Associated Fibroblasts",
     "section": "",
-    "text": "The protein PURA (purine-rich element binding protein A) is at the center of scientific investigation due to its involvement in two distinct types of neuronal diseases. In neurodegenerative RNA-repeat expansion disorders like ALS (Amyotrophic lateral sclerosis) and FTD (frontotemporal dementia), PURA has been found to bind to neuronal aggregates. On the other hand, spontaneous de novo mutations of the PURA gene lead to a neurodevelopmental disease known as PURA Syndrome. Despite its significance, our understanding of the molecular pathways affected by PURA in healthy cells and its association with these diseases remains limited.\nTo bridge this knowledge gap, we teamed up with the groups of Professor Dr. Dierk Niessing at Universität Ulm and Helmholtz Zentrum München. Our primary objective is to shed light on the cellular function of PURA in healthy cells, an endeavor we have already begun to explore in our publication titled “Depletion of the RNA-binding protein PURA triggers changes in posttranscriptional gene regulation and loss of P-bodies” (Molitor & Klostermann et al., Nucleic Acids Research).\nIn our publication, we unveil the predominant cytoplasmic localization of PURA, where it interacts with thousands of mRNAs. Remarkably, the depletion of PURA leads to changes in the abundance of numerous transcripts. Based on the proteins encoded by these transcripts, we propose that PURA plays a pivotal role in immune responses, mitochondrial function, autophagy, and processing (P)-body activity. Notably, decreased levels of PURA impact the expression of essential P-body components, LSM14A and DDX6, consequently influencing the formation and composition of this phase-separated RNA processing machinery in human cells.\nBuilding upon these findings, our next step involves expanding our understanding of the effects of PURA syndrome through the utilization of physiological cell lines and diverse disease models."
+    "text": "The activation and differentiation of cancer-associated fibroblasts (CAF) are involved in tumor progression. Here, we showed that the tumor-promoting lipid mediator prostaglandin E2 (PGE2) plays a paradoxical role in CAF activation and tumor progression. The inflammatory lipid prostaglandin E2 suppresses cancer-associated fibroblast expansion and activation limited primary mammary tumor growth while promoting metastasis. These data characterized in this project suggests a new pathway of regulating inflammatory CAF activation, which affects breast cancer progression.\nThe full manuscript can be found at Cancer Research."
   },
   {
     "objectID": "project_posts/dna_stability/DSB/index.html",
     "href": "project_posts/dna_stability/DSB/index.html",
+    "title": "Endogenous DNA fragility",
+    "section": "",
+    "text": "Our research focuses on understanding the mechanisms behind genome rearrangements caused by DNA double-strand breaks (DSBs). These rearrangements can have both positive and negative effects, contributing to genetic diversity and disease development, particularly cancer. While we have knowledge about externally induced DNA fragile sites, the factors influencing spontaneous DSBs in different genomic regions and the underlying mechanisms remain unknown. In collaboration with our partners, we employ advanced genomics techniques to analyze DNA breaks at the nucleotide level and investigate chromatin interactions using chromosome conformation capture methods. Recent studies have demonstrated that transcription and the three-dimensional folding of the genome influence the occurrence of oncogenic rearrangements induced by chemotherapy. Additionally, our collaborators have identified a class of endogenous DNA fragile hotspots that differ from those induced by drugs. During the next phase of our project, we aim to uncover the sources of intrinsic DNA fragility and explore how they contribute to recurrent rearrangements and tissue-specific oncogenesis. By integrating the genomics data generated in the Roukos lab with computational analysis and machine learning, we will develop a comprehensive collection of intrinsic DNA fragility maps across various human cell types. Our research will investigate the relationship between DNA fragility and gene expression, chromatin organization, and three-dimensional chromosome structure. We will focus on the roles of non-canonical DNA structures, such as R-loops and G-quadruplexes, as well as incomplete topoisomerase actions, and their potential interference with replication and transcription. Utilizing machine learning models, we will construct predictive models for identifying intrinsic DNA fragility in the human genome and identify the most influential features and their interdependencies. Moreover, by integrating our findings with publicly available structural variants identified in cancer patient samples, we aim to identify tissue-specific genomic instability hotspots. Our project seeks to unravel why certain regions of the genome are more prone to breakage, providing valuable insights into the emergence of recurrent genome rearrangements and their association with oncogenesis."
+  },
+  {
+    "objectID": "project_posts/dna_stability/DSB/index.html#the-sources-and-consequences-of-dna-fragility-across-human-cell-types-and-diseases.",
+    "href": "project_posts/dna_stability/DSB/index.html#the-sources-and-consequences-of-dna-fragility-across-human-cell-types-and-diseases.",
     "title": "Endogenous DNA fragility",
     "section": "",
     "text": "Our research focuses on understanding the mechanisms behind genome rearrangements caused by DNA double-strand breaks (DSBs). These rearrangements can have both positive and negative effects, contributing to genetic diversity and disease development, particularly cancer. While we have knowledge about externally induced DNA fragile sites, the factors influencing spontaneous DSBs in different genomic regions and the underlying mechanisms remain unknown. In collaboration with our partners, we employ advanced genomics techniques to analyze DNA breaks at the nucleotide level and investigate chromatin interactions using chromosome conformation capture methods. Recent studies have demonstrated that transcription and the three-dimensional folding of the genome influence the occurrence of oncogenic rearrangements induced by chemotherapy. Additionally, our collaborators have identified a class of endogenous DNA fragile hotspots that differ from those induced by drugs. During the next phase of our project, we aim to uncover the sources of intrinsic DNA fragility and explore how they contribute to recurrent rearrangements and tissue-specific oncogenesis. By integrating the genomics data generated in the Roukos lab with computational analysis and machine learning, we will develop a comprehensive collection of intrinsic DNA fragility maps across various human cell types. Our research will investigate the relationship between DNA fragility and gene expression, chromatin organization, and three-dimensional chromosome structure. We will focus on the roles of non-canonical DNA structures, such as R-loops and G-quadruplexes, as well as incomplete topoisomerase actions, and their potential interference with replication and transcription. Utilizing machine learning models, we will construct predictive models for identifying intrinsic DNA fragility in the human genome and identify the most influential features and their interdependencies. Moreover, by integrating our findings with publicly available structural variants identified in cancer patient samples, we aim to identify tissue-specific genomic instability hotspots. Our project seeks to unravel why certain regions of the genome are more prone to breakage, providing valuable insights into the emergence of recurrent genome rearrangements and their association with oncogenesis."
@@ -126,11 +259,11 @@
     "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional regulatory processes.\nThe BindingSiteFinder software package provides a full workflow for RBP binding site definition. The package provides function as well as rich visualizations and is well integrated in state-of-the-art and widely used Bioconductor classes, such as GenomicRanges and SummarizedExperiments. For details please see the vignette."
   },
   {
-    "objectID": "tools_posts/bioconductor/cliProfiler/index.html",
-    "href": "tools_posts/bioconductor/cliProfiler/index.html",
-    "title": "cliProfiler",
+    "objectID": "tools_posts/bioconductor/bindingsitefinder/index.html#the-bindingsitefinder-package",
+    "href": "tools_posts/bioconductor/bindingsitefinder/index.html#the-bindingsitefinder-package",
+    "title": "BindingSiteFinder",
     "section": "",
-    "text": "{width = “600”, height = “600}\nCross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop cliProfiler package. The cliProfiler includes seven functions which allow users easily make different profile plots.\nThe cliProfiler package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html."
+    "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional regulatory processes.\nThe BindingSiteFinder software package provides a full workflow for RBP binding site definition. The package provides function as well as rich visualizations and is well integrated in state-of-the-art and widely used Bioconductor classes, such as GenomicRanges and SummarizedExperiments. For details please see the vignette."
   },
   {
     "objectID": "tools_posts/bioconductor/differentialbinding/index.html",
@@ -140,11 +273,11 @@
     "text": "Understanding condition specific affinity changes of a RNA-binding protein (RBP) to a known binding site is the next level of understanding (post-) transcriptional regulartory processes in more detail.\nThe DifferentialBinding module will extend the BindingSiteFinder by various new features and functionalities, suited to identify RBP specific binding site changes in a transcriptome wide fashion. The extention is soon to be released and can be found on the BindingSiteFinder Bioconductor page."
   },
   {
-    "objectID": "tools_posts/circrna/calcifer/index.html",
-    "href": "tools_posts/circrna/calcifer/index.html",
-    "title": "Calcifer: A workflow for circRNA detection and analysis",
+    "objectID": "tools_posts/bioconductor/differentialbinding/index.html#the-differential-binding-package-extension",
+    "href": "tools_posts/bioconductor/differentialbinding/index.html#the-differential-binding-package-extension",
+    "title": "Differential binding",
     "section": "",
-    "text": "Calcifer: A workflow for circRNA detection and analysis\nAuthor: Andre Brezski, Kathi Zarnack\n\n\n\n1. Introduction\nCalcifer is a workflow for highly automated detection and analysis of circRNAs in RNA-Seq datasets. It allows the evaluation of RNA-Seq read data up to a list of characterized circRNA isoforms, as well as the prediction of possible functions.\n\n\n2. Overview\n\n\n\nCalcifer workflow\n\n\n\n\n3. CircRNA detection\nIn a first step the RNA-seq data is aligned with STAR [1] and bwa [2] against the reference genome. The resulting bam-files are used as input for CIRCexplorer2 [3] and CIRI2 [4] respectively. These both tools yield an unfiltered list of putative circRNAs, which is further processed.\n\n\n4. CircRNA filtering\nThe raw circRNA results from both tools are then further filtered for canonical splice sites, length of the circRNA, encompassing junctions and uniquely mapped back-splice junction reads. At the end only circRNAs which have at least 2 uniquely back-splice junction reads are considered for further analysis.\n\n\n5. Downstream analysis\nBased on the filtered circRNA list there is a broad downstream analysis. To shed light on putative biogenesis and function the downstream analysis consists out of detection of putative miRNA binding, RBP binding and open reading frames.\n\n5.1. Linear and circular count data\nIn general a count matrix for linear and circular mapped reads is created. If needed these can be utilized by the user for differential expression analysis for multiple condition datasets. A rmd-file for a baseline DESeq2 analysis is included in the major workflow folder.\n\n\n5.2. miRNA binding site detection\nMiRNA binding sites are detected by miRanda [5] on the circular exonic sequence for each circRNA. To enable miRNA binding analysis over the back-splice junction sequence, the linear sequence is extended by 25 bp from the opposite end respectively.\n\n\n5.3. RBP binding site detection\nThe RBP binding prediction is performed with FIMO [6] on the same sequence (back-splice junction extended linear exon sequence) and additional on the not included sequence around the back-splice junction. CircRNA biogenesis can be enabled by RBP binding close to the back-splice junction. Also a putative function of circRNAs is the direct binding of RBPs.\n\n\n5.4. ORF prediction\nThe ORF prediction is performed on the linear- as well as the pseudo-circular and multi-cycle exonic circRNA sequence. These enables the prediction of longer ORFs, which span over the back-splice junction as well as multiple reading frames.\n\n\n\nLiterature\n[1] Dobin, Alexander, et al. “STAR: ultrafast universal RNA-seq aligner.” Bioinformatics 29.1 (2013): 15-21.\n[2] Li, H., & Durbin, R. (2009). Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics, 25(14), 1754–1760.\n[3] Zhang, Xiao-Ou, et al. “Diverse alternative back-splicing and alternative splicing landscape of circular RNAs.” Genome research 26.9 (2016): 1277-1287.\n[4] Gao, Yuan, Jinyang Zhang, and Fangqing Zhao. “Circular RNA identification based on multiple seed matching.” Briefings in bioinformatics 19.5 (2018): 803-810.\n[5] John, Bino, et al. “Human microRNA targets.” PLoS biology 2.11 (2004): e363.\n[6] Grant, Charles E., Timothy L. Bailey, and William Stafford Noble. “FIMO: scanning for occurrences of a given motif.” Bioinformatics 27.7 (2011): 1017-1018."
+    "text": "Understanding condition specific affinity changes of a RNA-binding protein (RBP) to a known binding site is the next level of understanding (post-) transcriptional regulartory processes in more detail.\nThe DifferentialBinding module will extend the BindingSiteFinder by various new features and functionalities, suited to identify RBP specific binding site changes in a transcriptome wide fashion. The extention is soon to be released and can be found on the BindingSiteFinder Bioconductor page."
   },
   {
     "objectID": "tools_posts/clip_processing/clipmethods/index.html",
@@ -154,213 +287,10 @@
     "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional gene regulation. This information can be obtained from individual-nucleotide resolution UV crosslinking and immunoprecipitation (iCLIP) experiments. In this project we discribed the complete bioinformatic data analysis workflow to reliably detect RBP binding sites from iCLIP data. The workflow covers all steps from the initial quality control of the sequencing reads up to peak calling and quantification of RBP binding. For each tool, we explain the specific requirements for iCLIP data analysis and suggest optimized parameter settings.\nThe full manuscript can be found at Methods and an updated version of the binding site definition part is published as the R/ Bioconductor packge BindingSiteFinder Bioconductor page."
   },
   {
-    "objectID": "tools_posts/bioconductor/m6Aboost/index.html",
-    "href": "tools_posts/bioconductor/m6Aboost/index.html",
-    "title": "m6Aboost",
-    "section": "",
-    "text": "{width = “400”, height = “900}\nN6-methyladenosine (m6A) is the most abundant internal modification in mRNA. It impacts many different aspects of an mRNA’s life, e.g. nuclear export, translation, stability, etc.\nm6A individual-nucleotide resolution UV crosslinking and immunoprecipitation (miCLIP) and the improved miCLIP2 are m6A antibody-based methods that allow the transcriptome-wide mapping of m6A sites at a single-nucleotide resolution (Körtel et al. 2021)(Linder et al. 2015). In brief, UV crosslinking of the m6A antibody to the modified RNA leads to truncation of reverse transcription or C-to-T transitions in the case of readthrough. However, due to the limited specificity and high cross-reactivity of the m6A antibodies, the miCLIP data comprise a high background signal, which hampers the reliable identification of m6A sites from the data.\nFor accurately detecting m6A sites, we implemented an AdaBoost-based machine learning model (m6Aboost) for classifying the miCLIP2 peaks into m6A sites and background signals (Körtel et al. 2021). The model was trained on high-confidence m6A sites that were obtained by comparing wildtype and Mettl3 knockout mouse embryonic stem cells (mESC) lacking the major methyltransferase Mettl3. For classification, the m6Aboost model uses a series of features, including the experimental miCLIP2 signal (truncation events and C-to-T transitions) as well as the transcript region (5’UTR, CDS, 3’UTR) and the nucleotide sequence in a 21-nt window around the miCLIP2 peak.\nThe m6Aboost package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/m6Aboost.html."
-  },
-  {
-    "objectID": "tools_posts/clip_processing/raccon/index.html",
-    "href": "tools_posts/clip_processing/raccon/index.html",
-    "title": "racoon_clip - complete CLIP processing from one single command",
-    "section": "",
-    "text": "racoon_clip is a commandline tool, that automates the CLIP processing pipeline from Busch et al. (2020). It can processes both iCLIP and eCLIP data and outputs the crosslinking signal with single-nucleotide resolution.\nYou can find the documentation here."
-  },
-  {
-    "objectID": "people_2.html",
-    "href": "people_2.html",
-    "title": "People",
-    "section": "",
-    "text": "Group leader"
-  },
-  {
-    "objectID": "people_2.html#group-members",
-    "href": "people_2.html#group-members",
-    "title": "People",
-    "section": "Group members",
-    "text": "Group members\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\nPostdoc\n\n\n\n\n\nFigure 1: Mirko Brüggemann Postdoc strange guy\n\n\n\n\n\n\n\n\nYou Zhou phD student"
-  },
-  {
-    "objectID": "people_2.html#collaborations",
-    "href": "people_2.html#collaborations",
-    "title": "People",
-    "section": "Collaborations",
-    "text": "Collaborations\n\n\n\n\n\n\n\n\nClara Hernandez Canas\nassociated phD student (Müller-McNicoll group Uni Frankfurt)"
-  },
-  {
-    "objectID": "people_2.html#group-members-1",
-    "href": "people_2.html#group-members-1",
-    "title": "People",
-    "section": "Group members",
-    "text": "Group members\n\n\n\n\n\n\n\n\nMirko Brüggemann\nPostdoc strange guy\n\n\n\n\n\n\n\nYou Zhou\n\nphD student\nnice sunglasses\n\n\n\n\n\n\n\n\n\n\nMelina Klostermann\nphD student \n\n\n\n\n\n\n\nAndre Brezki\nphD student \n\n\n\n\n\n\n\n\n\nDominik Stroh\nphD student \n\n\n\n\n\n\n\nJonas Busam\nMaster Student \n\n\n\n\n\n\n\n\n\nCem Bakisoglu\nMaster Student\n\n\n\n\n\n\n\nAnnika Ladwig\nHiWi"
-  },
-  {
-    "objectID": "people_2.html#previous-members",
-    "href": "people_2.html#previous-members",
-    "title": "People",
-    "section": "Previous members",
-    "text": "Previous members"
-  },
-  {
-    "objectID": "people_2.html#impressions",
-    "href": "people_2.html#impressions",
-    "title": "People",
-    "section": "Impressions",
-    "text": "Impressions"
-  },
-  {
-    "objectID": "people.html#group-members",
-    "href": "people.html#group-members",
-    "title": "People",
-    "section": "Group members",
-    "text": "Group members\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\nPostdoc\n\n\n\n\n\nFigure 1: Mirko Brüggemann Postdoc strange guy\n\n\n\n\n\n\n\n\nYou Zhou phD student"
-  },
-  {
-    "objectID": "people.html#group-members-1",
-    "href": "people.html#group-members-1",
-    "title": "People",
-    "section": "Group members",
-    "text": "Group members\n\n\n\n\n\n\n\n\nMirko Brüggemann\nPostdoc strange guy\n\n\n\n\n\n\n\nYou Zhou\n\nphD student\nnice sunglasses\n\n\n\n\n\n\n\n\n\n\nMelina Klostermann\nphD student \n\n\n\n\n\n\n\nAndre Brezki\nphD student \n\n\n\n\n\n\n\n\n\nDominik Stroh\nphD student \n\n\n\n\n\n\n\nJonas Busam\nMaster Student \n\n\n\n\n\n\n\n\n\nCem Bakisoglu\nMaster Student\n\n\n\n\n\n\n\nAnnika Ladwig\nHiWi"
-  },
-  {
-    "objectID": "people.html#collaborations",
-    "href": "people.html#collaborations",
-    "title": "People",
-    "section": "Collaborations",
-    "text": "Collaborations\n\n\n\n\n\n\n\n\nClara Hernandez Canas\nassociated phD student (Müller-McNicoll group Uni Frankfurt)"
-  },
-  {
-    "objectID": "people.html#previous-members",
-    "href": "people.html#previous-members",
-    "title": "People",
-    "section": "Previous members",
-    "text": "Previous members\n\n\n\n\n\n\n\nMirko Brüggemann\n\n\n\n\n\n\n\n\n\nMario Keller"
-  },
-  {
-    "objectID": "people.html#impressions",
-    "href": "people.html#impressions",
-    "title": "People",
-    "section": "Impressions",
-    "text": "Impressions"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Phone +49 (0)69 798-42506\nFax +49 (0)69 798-763-42506\nkathi.zarnack(at)bmls.de\n\nVisiting Address:\nBMLS Buchmann Institute for Molecular Life Sciences\nGoethe University Frankfurt\nMax von Laue Str. 15, Room 3.655\n60438 Frankfurt/Main\nGermany"
-  },
-  {
-    "objectID": "people.html#the-group",
-    "href": "people.html#the-group",
-    "title": "People",
-    "section": "",
-    "text": "Group leader kathi.zarnack-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student you.zhou-at-bmls.de \n\n\n\n\n\n\n\n\n\n\nPhD student melina.klostermann-at-bmls.de \n\n\n\n\n\n\n\n\nPhD student Brezski-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\n\n\nPhD student d.stroh-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\njoined Postdoc (Feldbrügge group Uni Düsseldorf) sankaran-at-hhu.de \n\n\n\n\n\n\n\n\n\n\njoined PhD student (Müller-McNicoll group Uni Frankfurt) HernandezCanas-at-em.uni-frankfurt.de \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\nMaster Student \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\n\n\nHiWi \n\n\n\n\n\n\n\n\nHiWi"
-  },
-  {
-    "objectID": "tools.html#clip-data-processing",
-    "href": "tools.html#clip-data-processing",
-    "title": "Tools",
-    "section": "",
-    "text": "We provide a complete workflow for the processing of CLIP data and the tool racoon_clip, which automatises this workflow.\n\n\n\n\n\n\n\n\n\n\n\niCLIP data analysis: A complete pipeline from sequencing reads to RBP binding sites\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nracoon processes your raw iCLIP or eCLIP read data to crosslinks with single nucleotide resolution.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "tools_posts/clip_processing/clipmethods/index.html#a-complete-pipeline-from-sequencing-reads-to-rbp-binding-sites",
     "href": "tools_posts/clip_processing/clipmethods/index.html#a-complete-pipeline-from-sequencing-reads-to-rbp-binding-sites",
     "title": "A bioinformatics pipeline for iCLIP data analysis",
     "section": "",
     "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional gene regulation. This information can be obtained from individual-nucleotide resolution UV crosslinking and immunoprecipitation (iCLIP) experiments. In this project we discribed the complete bioinformatic data analysis workflow to reliably detect RBP binding sites from iCLIP data. The workflow covers all steps from the initial quality control of the sequencing reads up to peak calling and quantification of RBP binding. For each tool, we explain the specific requirements for iCLIP data analysis and suggest optimized parameter settings.\nThe full manuscript can be found at Methods and an updated version of the binding site definition part is published as the R/ Bioconductor packge BindingSiteFinder Bioconductor page."
-  },
-  {
-    "objectID": "tools_posts/bioconductor/differentialbinding/index.html#the-differential-binding-package-extension",
-    "href": "tools_posts/bioconductor/differentialbinding/index.html#the-differential-binding-package-extension",
-    "title": "Differential binding",
-    "section": "",
-    "text": "Understanding condition specific affinity changes of a RNA-binding protein (RBP) to a known binding site is the next level of understanding (post-) transcriptional regulartory processes in more detail.\nThe DifferentialBinding module will extend the BindingSiteFinder by various new features and functionalities, suited to identify RBP specific binding site changes in a transcriptome wide fashion. The extention is soon to be released and can be found on the BindingSiteFinder Bioconductor page."
-  },
-  {
-    "objectID": "tools_posts/bioconductor/bindingsitefinder/index.html#the-bindingsitefinder-package",
-    "href": "tools_posts/bioconductor/bindingsitefinder/index.html#the-bindingsitefinder-package",
-    "title": "BindingSiteFinder",
-    "section": "",
-    "text": "Precise knowledge on the binding sites of an RNA-binding protein (RBP) is key to understand (post-) transcriptional regulatory processes.\nThe BindingSiteFinder software package provides a full workflow for RBP binding site definition. The package provides function as well as rich visualizations and is well integrated in state-of-the-art and widely used Bioconductor classes, such as GenomicRanges and SummarizedExperiments. For details please see the vignette."
-  },
-  {
-    "objectID": "project_posts/dna_stability/DSB/index.html#the-sources-and-consequences-of-dna-fragility-across-human-cell-types-and-diseases.",
-    "href": "project_posts/dna_stability/DSB/index.html#the-sources-and-consequences-of-dna-fragility-across-human-cell-types-and-diseases.",
-    "title": "Endogenous DNA fragility",
-    "section": "",
-    "text": "Our research focuses on understanding the mechanisms behind genome rearrangements caused by DNA double-strand breaks (DSBs). These rearrangements can have both positive and negative effects, contributing to genetic diversity and disease development, particularly cancer. While we have knowledge about externally induced DNA fragile sites, the factors influencing spontaneous DSBs in different genomic regions and the underlying mechanisms remain unknown. In collaboration with our partners, we employ advanced genomics techniques to analyze DNA breaks at the nucleotide level and investigate chromatin interactions using chromosome conformation capture methods. Recent studies have demonstrated that transcription and the three-dimensional folding of the genome influence the occurrence of oncogenic rearrangements induced by chemotherapy. Additionally, our collaborators have identified a class of endogenous DNA fragile hotspots that differ from those induced by drugs. During the next phase of our project, we aim to uncover the sources of intrinsic DNA fragility and explore how they contribute to recurrent rearrangements and tissue-specific oncogenesis. By integrating the genomics data generated in the Roukos lab with computational analysis and machine learning, we will develop a comprehensive collection of intrinsic DNA fragility maps across various human cell types. Our research will investigate the relationship between DNA fragility and gene expression, chromatin organization, and three-dimensional chromosome structure. We will focus on the roles of non-canonical DNA structures, such as R-loops and G-quadruplexes, as well as incomplete topoisomerase actions, and their potential interference with replication and transcription. Utilizing machine learning models, we will construct predictive models for identifying intrinsic DNA fragility in the human genome and identify the most influential features and their interdependencies. Moreover, by integrating our findings with publicly available structural variants identified in cancer patient samples, we aim to identify tissue-specific genomic instability hotspots. Our project seeks to unravel why certain regions of the genome are more prone to breakage, providing valuable insights into the emergence of recurrent genome rearrangements and their association with oncogenesis."
-  },
-  {
-    "objectID": "project_posts/rna_regulation/srsf6hypoxia/index.html#the-effect-of-srsf6-poison-cassette-exon-splicing-in-hypoxia",
-    "href": "project_posts/rna_regulation/srsf6hypoxia/index.html#the-effect-of-srsf6-poison-cassette-exon-splicing-in-hypoxia",
-    "title": "SRSF6 poison cassette exon splicing as hypoxia response",
-    "section": "",
-    "text": "Hypoxia induces massive changes in alternative splicing (AS) to adapt cells to the lack of oxygen. In this project SRSF6 was found to be a key factor in the AS response to hypoxia. A strong reduction in SRSF6 levels in acute hypoxia led to exon skipping and triggered nuclear speckle dispersal as a mechanism for the cell to reprogram the gene expression profile. We found this mechanism to be active in various cancer types and further propose a tumor suppressor function.\nThe full manuscript can be found at Nucleic Acids Research."
-  },
-  {
-    "objectID": "projects.html#learning-the-molecular-code-of-rna-regulation",
-    "href": "projects.html#learning-the-molecular-code-of-rna-regulation",
-    "title": "Projects",
-    "section": "",
-    "text": "RNA regulation plays a major role in cellular function, and alterations such as alternative splicing are frequently implicated in human disease including cancer. Key players are RBPs that recognise cis-regulatory RNA sequence elements, such as short sequence motifs or structured RNA folds. However, the position and function of most cis-regulatory elements remain unknown, hindering the interpretation of disease-associated mutations and the resulting splicing changes.\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding ubiquitin ligase MKRN1 functions in ribosome-associated quality control of poly(A) translation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPoison cassette exon splicing of SRSF6 regulates nuclear speckle dispersal and the response to hypoxia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe RNA-binding profile of the splicing factor SRSF6 in immortalized human pancreatic β-cells\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching.html#and-also-what-we-dont-know",
-    "href": "teaching.html#and-also-what-we-dont-know",
-    "title": "We teach what we know",
-    "section": "",
-    "text": "Haha"
-  },
-  {
-    "objectID": "project_posts/rna_regulation/srsf6diabetes/index.html#the-rna-binding-protein-srsf6-in-human-pancreatic-β-cells",
-    "href": "project_posts/rna_regulation/srsf6diabetes/index.html#the-rna-binding-protein-srsf6-in-human-pancreatic-β-cells",
-    "title": "SRSF6 positioning determines the splicing fate in human pancreatic β-cells",
-    "section": "",
-    "text": "In pancreatic β-cells SRSF6 down-regulation promotes β-cell demise through splicing dysregulation of central genes for β-cells function and survival. In this project we characterized the SRSF6 binding landscape in human pancreatic β-cells and identified a purine-rich SRSF6 consensus motif. We also observed, that the positioning of SRSF6 determined the splicing fate by either promoting exon skipping or exon inclusion. Our results also show that such splicing changes can be modulated by the use of antisense oligonucleotides.\nThe full manuscript can be found at Life Science Alliance."
-  },
-  {
-    "objectID": "project_posts/rna_regulation/mkrn/index.html#the-role-of-mkrn1-in-maintaining-proteome-integrity",
-    "href": "project_posts/rna_regulation/mkrn/index.html#the-role-of-mkrn1-in-maintaining-proteome-integrity",
-    "title": "Ribosome-associated quality control by MKRN1",
-    "section": "",
-    "text": "Translating ribosomes that encounter poly(A) sequences are terminally stalled, as quality control mechanism, followed by ribosome recycling and decay of the truncated nascent polypeptide via ribosome-associated quality control. In this project we demonstrated that the conserved RNA-binding E3 ubiquitin ligase Makorin Ring Finger Protein 1 (MKRN1) promotes ribosome stalling at poly(A) sequences during ribosome-associated quality control. We observed a direct interaction with the cytoplasmic poly(A)-binding protein (PABPC1) as well as precice position upstream of poly(A) tails in the mRNA.Thus we propose that MKRN1 mediates the recognition of poly(A) tails to prevent the production of erroneous proteins from prematurely polyadenylated transcripts, thereby maintaining proteome integrity.\nThe full manuscript can be found at Genome Biology."
-  },
-  {
-    "objectID": "tools_posts/bioconductor/m6Aboost/index.html#the-cliprofiler-package-extension",
-    "href": "tools_posts/bioconductor/m6Aboost/index.html#the-cliprofiler-package-extension",
-    "title": "m6Aboost",
-    "section": "",
-    "text": "{width = “400”, height = “900}\nN6-methyladenosine (m6A) is the most abundant internal modification in mRNA. It impacts many different aspects of an mRNA’s life, e.g. nuclear export, translation, stability, etc.\nm6A individual-nucleotide resolution UV crosslinking and immunoprecipitation (miCLIP) and the improved miCLIP2 are m6A antibody-based methods that allow the transcriptome-wide mapping of m6A sites at a single-nucleotide resolution (Körtel et al. 2021)(Linder et al. 2015). In brief, UV crosslinking of the m6A antibody to the modified RNA leads to truncation of reverse transcription or C-to-T transitions in the case of readthrough. However, due to the limited specificity and high cross-reactivity of the m6A antibodies, the miCLIP data comprise a high background signal, which hampers the reliable identification of m6A sites from the data.\nFor accurately detecting m6A sites, we implemented an AdaBoost-based machine learning model (m6Aboost) for classifying the miCLIP2 peaks into m6A sites and background signals (Körtel et al. 2021). The model was trained on high-confidence m6A sites that were obtained by comparing wildtype and Mettl3 knockout mouse embryonic stem cells (mESC) lacking the major methyltransferase Mettl3. For classification, the m6Aboost model uses a series of features, including the experimental miCLIP2 signal (truncation events and C-to-T transitions) as well as the transcript region (5’UTR, CDS, 3’UTR) and the nucleotide sequence in a 21-nt window around the miCLIP2 peak.\nThe m6Aboost package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/m6Aboost.html."
-  },
-  {
-    "objectID": "tools_posts/bioconductor/cliProfiler/index.html#the-cliprofiler-package-extension",
-    "href": "tools_posts/bioconductor/cliProfiler/index.html#the-cliprofiler-package-extension",
-    "title": "cliProfiler",
-    "section": "",
-    "text": "{width = “600”, height = “600}\nCross-linking immunoprecipitation (CLIP) is a technique that combines UV cross-linking and immunoprecipitation to analyse protein-RNA interactions or to pinpoint RNA modifications (e.g. m6A). CLIP-based methods, such as iCLIP and eCLIP, allow precise mapping of RNA modification sites or RNA-binding protein (RBP) binding sites on a genome-wide scale. These techniques help us to unravel post-transcriptional regulatory networks. In order to make the visualization of CLIP data easier, we develop cliProfiler package. The cliProfiler includes seven functions which allow users easily make different profile plots.\nThe cliProfiler package is available at https://bioconductor.org and can be access with the following link: https://bioconductor.org/packages/release/bioc/html/cliProfiler.html."
-  },
-  {
-    "objectID": "project_posts/disease/cafs/index.html#the-role-of-cancer-associated-fibroblasts-in-mammary-carcinoma-development",
-    "href": "project_posts/disease/cafs/index.html#the-role-of-cancer-associated-fibroblasts-in-mammary-carcinoma-development",
-    "title": "Phenotypic Plasticity of Fibroblasts during Mammary Carcinoma Development",
-    "section": "",
-    "text": "Cancer-associated fibroblasts (CAFs) in the tumor microenvironment contribute to all stages of tumorigenesis and are usually considered to be tumor-promoting cells. In this project we found a remarkable degree of CAF herterogenity which changed during mammary cancer development. We created whole transcriptome longitudinal data on CAF development from early- and late-stage tumors and observed a shift in fibroblast populations over time, which was negatively associated with patient survival. We then trained a random forest classification model to compute a gene signature that had predicive power in bulk tumor patient samples.\nThe full manuscript can be found at International Journal of Molecular Sciences."
-  },
-  {
-    "objectID": "project_posts/disease/pge2signaling/index.html#the-effect-of-prostaglandin-e2-signaling-disruption-in-cancer-associated-fibroblasts",
-    "href": "project_posts/disease/pge2signaling/index.html#the-effect-of-prostaglandin-e2-signaling-disruption-in-cancer-associated-fibroblasts",
-    "title": "Prostaglandin E2 Signaling in Cancer-Associated Fibroblasts",
-    "section": "",
-    "text": "The activation and differentiation of cancer-associated fibroblasts (CAF) are involved in tumor progression. Here, we showed that the tumor-promoting lipid mediator prostaglandin E2 (PGE2) plays a paradoxical role in CAF activation and tumor progression. The inflammatory lipid prostaglandin E2 suppresses cancer-associated fibroblast expansion and activation limited primary mammary tumor growth while promoting metastasis. These data characterized in this project suggests a new pathway of regulating inflammatory CAF activation, which affects breast cancer progression.\nThe full manuscript can be found at Cancer Research."
-  },
-  {
-    "objectID": "project_posts/disease/PURA/index.html#understanding-the-function-of-pura-in-healthy-organisms-and-in-the-context-of-pura-syndrome.",
-    "href": "project_posts/disease/PURA/index.html#understanding-the-function-of-pura-in-healthy-organisms-and-in-the-context-of-pura-syndrome.",
-    "title": "Understanding the function of PURA in healthy organisms and in the context of PURA Syndrome.",
-    "section": "",
-    "text": "The protein PURA (purine-rich element binding protein A) is at the center of scientific investigation due to its involvement in two distinct types of neuronal diseases. In neurodegenerative RNA-repeat expansion disorders like ALS (Amyotrophic lateral sclerosis) and FTD (frontotemporal dementia), PURA has been found to bind to neuronal aggregates. On the other hand, spontaneous de novo mutations of the PURA gene lead to a neurodevelopmental disease known as PURA Syndrome. Despite its significance, our understanding of the molecular pathways affected by PURA in healthy cells and its association with these diseases remains limited.\nTo bridge this knowledge gap, we teamed up with the groups of Professor Dr. Dierk Niessing at Universität Ulm and Helmholtz Zentrum München. Our primary objective is to shed light on the cellular function of PURA in healthy cells, an endeavor we have already begun to explore in our publication titled “Depletion of the RNA-binding protein PURA triggers changes in posttranscriptional gene regulation and loss of P-bodies” (Molitor & Klostermann et al., Nucleic Acids Research).\nIn our publication, we unveil the predominant cytoplasmic localization of PURA, where it interacts with thousands of mRNAs. Remarkably, the depletion of PURA leads to changes in the abundance of numerous transcripts. Based on the proteins encoded by these transcripts, we propose that PURA plays a pivotal role in immune responses, mitochondrial function, autophagy, and processing (P)-body activity. Notably, decreased levels of PURA impact the expression of essential P-body components, LSM14A and DDX6, consequently influencing the formation and composition of this phase-separated RNA processing machinery in human cells.\nBuilding upon these findings, our next step involves expanding our understanding of the effects of PURA syndrome through the utilization of physiological cell lines and diverse disease models."
   }
 ]
